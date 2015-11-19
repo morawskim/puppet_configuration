@@ -34,3 +34,6 @@
 [submodule "modules/wget"]
 	path = modules/wget
 	url = https://github.com/maestrodev/puppet-wget.git
+[submodule "modules/incron"]
+	path = modules/incron
+	url = https://github.com/meltwater/puppet-incron.git
