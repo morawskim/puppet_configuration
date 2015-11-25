@@ -37,3 +37,6 @@
 [submodule "modules/incron"]
 	path = modules/incron
 	url = https://github.com/meltwater/puppet-incron.git
+[submodule "modules/bacula"]
+	path = modules/bacula
+	url = https://github.com/puppetlabs/puppetlabs-bacula.git
