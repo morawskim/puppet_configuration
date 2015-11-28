@@ -40,3 +40,6 @@
 [submodule "modules/bacula"]
 	path = modules/bacula
 	url = https://github.com/puppetlabs/puppetlabs-bacula.git
+[submodule "modules/samba"]
+	path = modules/samba
+	url = https://github.com/ajjahn/puppet-samba.git
