@@ -43,3 +43,6 @@
 [submodule "modules/samba"]
 	path = modules/samba
 	url = https://github.com/ajjahn/puppet-samba.git
+[submodule "modules/cups"]
+	path = modules/cups
+	url = https://github.com/mosen/puppet-cups.git
