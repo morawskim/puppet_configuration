@@ -46,3 +46,6 @@
 [submodule "modules/cups"]
 	path = modules/cups
 	url = https://github.com/mosen/puppet-cups.git
+[submodule "modules/gitconfig"]
+	path = modules/gitconfig
+	url = https://github.com/morawskim/puppet-gitconfig.git
