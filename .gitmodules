@@ -49,3 +49,6 @@
 [submodule "modules/gitconfig"]
 	path = modules/gitconfig
 	url = https://github.com/morawskim/puppet-gitconfig.git
+[submodule "modules/zypprepo"]
+	path = modules/zypprepo
+	url = https://github.com/deadpoint/puppet-zypprepo.git
