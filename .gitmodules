@@ -52,3 +52,6 @@
 [submodule "modules/zypprepo"]
 	path = modules/zypprepo
 	url = https://github.com/deadpoint/puppet-zypprepo.git
+[submodule "modules/rpmkey"]
+	path = modules/rpmkey
+	url = https://github.com/stschulte/puppet-rpmkey.git
