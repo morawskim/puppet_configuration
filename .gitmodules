@@ -52,3 +52,6 @@
 [submodule "modules/rpmkey"]
 	path = modules/rpmkey
 	url = https://github.com/stschulte/puppet-rpmkey.git
+[submodule "modules/archive"]
+	path = modules/archive
+	url = https://github.com/camptocamp/puppet-archive.git
