@@ -55,3 +55,6 @@
 [submodule "modules/archive"]
 	path = modules/archive
 	url = https://github.com/camptocamp/puppet-archive.git
+[submodule "modules/systemd"]
+	path = modules/systemd
+	url = https://github.com/camptocamp/puppet-systemd.git
