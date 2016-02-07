@@ -1,5 +1,6 @@
 ---
 mopensuse::packages::php-dev-scripts::github_oauth_token: 'secrettoken'
+mopensuse::packages::x11vnc::vnc_password: 'secretpassword'
 
 #account
 mopensuse::user::marcin::password: 'secret'
