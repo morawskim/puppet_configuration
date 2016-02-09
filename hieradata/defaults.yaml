@@ -7,6 +7,9 @@ mopensuse::user::marcin::password: 'secret'
 mopensuse::user::marcin::username: 'marcin'
 mopensuse::user::marcin::user_home_path: '/home/marcin'
 mopensuse::user::marcin::realname: 'Marcin Morawski'
+mopensuse::user::marcin::git_user_name: 'Marcin Morawski'
+mopensuse::user::marcin::git_user_email: 'marcin@morawskim.pl'
+mopensuse::user::marcin::git_diff_tool: 'kdiff3'
 mopensuse::user::marcin::ssh_keys:
    marcin.morawski.work:
       key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDZDsJ38k7nRmVqGLUIpctPHW+Keo4v6eF3MFqVzgRImaspB+hfI/2zP5PjMiTxtVSkMOPSrii2hgSdFA5wElrK5JW7XFNWdNvky/d/Df0VBCADO5I7fRg3kfUDOG+GGLCzYZvfLyZ+EsveJ0Q65Pe24W51lZ28I48LedYEjXfgZ0yoDDCa8MEQH58Id1QZKFi/sR+bgHBqug3zARO/fQIebkmD3BCssahGzxOpWo8n1FrRDxw0vcF9urghm+P4aemDBPf+NOCJguDjwFaWhxQzAK/AMNo8CaEY+rMabFLMwGXUw1TPWXl48i71UzCk/Gdd9KW+aY4g7Pk4pTHLJkw9'
