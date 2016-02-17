@@ -58,3 +58,6 @@
 [submodule "modules/systemd"]
 	path = modules/systemd
 	url = https://github.com/camptocamp/puppet-systemd.git
+[submodule "modules/postfix"]
+	path = modules/postfix
+	url = https://github.com/mjhas/postfix.git
