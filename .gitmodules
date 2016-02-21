@@ -61,3 +61,6 @@
 [submodule "modules/postfix"]
 	path = modules/postfix
 	url = https://github.com/mjhas/postfix.git
+[submodule "modules/nodejs"]
+	path = modules/nodejs
+	url = https://github.com/voxpupuli/puppet-nodejs.git
