@@ -19,4 +19,12 @@ mopensuse::user::marcin::ssh_keys:
    morawskim:
       key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDZpPxCj3WW031TTVkxI520OwqNsXccG5Lg1QC8QBBzO/RnTmyLZHccOOjebhKsrvsKqhdh2VkKBOw5gTPeFAUIE4ucdp+m6Ku8vDPNqEHu2V9JXIiqgyPnuFVN1RtGskCYc4ivFBgLiWdmw8w83xpfM9Vet//+xetDWYIAyUBbMF00K6Jl8UK4dpaQfAcM8YHPZDqxYZfJitRHxa/MeQb3WJwCtV/Yq8ne49LqJAzGuflIsPfQF9VQ0hJt2q4r7vzufy4KvyPQOl40z1r4lKtwFZo1hgBMHxcGWpxS5hRB+5x+clqoGePxB9vTxjfMYh0mMXn7KTb8cVHlSJ5JDnOV'
       type: 'ssh-rsa'
+      
+#samba  
+samba::server::workgroup: 'WORKGROUP'
+samba::server::server_string: 'Samba on openSUSE'
+samba::server::security: 'users'
+samba::server::netbios_name: 'HP openSUSE'
+mopensuse::samba::users::marcin::password: 'secret'
+mopensuse::samba::users::guest::password: 'secret'
 
