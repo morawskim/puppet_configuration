@@ -31,3 +31,9 @@ mopensuse::samba::users::guest::password: 'secret'
 #vagrant
 mopensuse::packages::vagrant::vagrant_nfsd_users: 'marcin'
 mopensuse::packages::vagrant::vagrant_home: '/usr/share/vagrant'
+
+#zabbix
+mopensuse::packages::zabbix::zabbix_server_db_name: 'zabbix_server'
+mopensuse::packages::zabbix::zabbix_server_db_user: 'zabbix_server'
+mopensuse::packages::zabbix::zabbix_server_db_pass: 'zabbix_server'
+
