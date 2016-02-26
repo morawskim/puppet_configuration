@@ -28,3 +28,6 @@ samba::server::netbios_name: 'HP openSUSE'
 mopensuse::samba::users::marcin::password: 'secret'
 mopensuse::samba::users::guest::password: 'secret'
 
+#vagrant
+mopensuse::packages::vagrant::vagrant_nfsd_users: 'marcin'
+mopensuse::packages::vagrant::vagrant_home: '/usr/share/vagrant'
