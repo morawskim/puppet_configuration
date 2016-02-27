@@ -64,3 +64,6 @@
 [submodule "modules/nodejs"]
 	path = modules/nodejs
 	url = https://github.com/voxpupuli/puppet-nodejs.git
+[submodule "modules/zabbix"]
+	path = modules/zabbix
+	url = https://github.com/morawskim/puppet-zabbix.git
