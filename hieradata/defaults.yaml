@@ -43,3 +43,5 @@ mopensuse::packages::zabbix::zabbix_server_db_name: 'zabbix_server'
 mopensuse::packages::zabbix::zabbix_server_db_user: 'zabbix_server'
 mopensuse::packages::zabbix::zabbix_server_db_pass: 'zabbix_server'
 
+#mphp
+mopensuse::packages::mphp::mphp_sudoers_users: 'marcin'
