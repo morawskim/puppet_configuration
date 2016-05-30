@@ -67,3 +67,6 @@
 [submodule "modules/zabbix"]
 	path = modules/zabbix
 	url = https://github.com/morawskim/puppet-zabbix.git
+[submodule "modules/jenkins"]
+	path = modules/jenkins
+	url = https://github.com/morawskim/puppet-jenkins.git
