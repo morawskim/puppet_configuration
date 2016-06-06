@@ -29,8 +29,8 @@ mopensuse::user::marcin::ssh_keys:
 #samba  
 samba::server::workgroup: 'WORKGROUP'
 samba::server::server_string: 'Samba on openSUSE'
-samba::server::security: 'users'
-samba::server::netbios_name: 'HP openSUSE'
+samba::server::security: 'user'
+samba::server::netbios_name: 'Lenovo openSUSE'
 mopensuse::samba::users::marcin::password: 'secret'
 mopensuse::samba::users::guest::password: 'secret'
 
