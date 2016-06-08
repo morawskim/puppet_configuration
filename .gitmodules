@@ -73,3 +73,6 @@
 [submodule "modules/archive2"]
 	path = modules/archive2
 	url = https://github.com/morawskim/puppet-archive.git
+[submodule "modules/tomcat"]
+	path = modules/tomcat
+	url = https://github.com/puppetlabs/puppetlabs-tomcat.git
