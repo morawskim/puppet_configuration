@@ -76,3 +76,6 @@
 [submodule "modules/tomcat"]
 	path = modules/tomcat
 	url = https://github.com/puppetlabs/puppetlabs-tomcat.git
+[submodule "modules/ca_cert"]
+	path = modules/ca_cert
+	url = https://github.com/morawskim/puppet-ca_cert.git
