@@ -45,3 +45,6 @@ mopensuse::packages::zabbix::zabbix_server_db_pass: 'zabbix_server'
 
 #mphp
 mopensuse::packages::mphp::mphp_sudoers_users: 'marcin'
+
+#selenium
+mopensuse::packages::selenium::chromedrive_path: '/usr/lib/selenium/chromedriver'
