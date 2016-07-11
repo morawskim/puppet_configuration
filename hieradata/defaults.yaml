@@ -48,3 +48,11 @@ mopensuse::packages::mphp::mphp_sudoers_users: 'marcin'
 
 #selenium
 mopensuse::packages::selenium::chromedrive_path: '/usr/lib/selenium/chromedriver'
+
+#mproject eoview
+mprojects::eoview_params::vscrepo_auth_username: 'username'
+mprojects::eoview_params::vscrepo_auth_password: 'password'
+mprojects::eoview::vscrepo_source: 'svn_repo'
+mprojects::eoview_api::vscrepo_source: 'svn_repo'
+mprojects::eoview_partner::vscrepo_source: 'svn_repo'
+mprojects::eoview_saas::vscrepo_source: 'svn_repo'
