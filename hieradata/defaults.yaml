@@ -26,6 +26,19 @@ mopensuse::user::marcin::ssh_keys:
       key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDZpPxCj3WW031TTVkxI520OwqNsXccG5Lg1QC8QBBzO/RnTmyLZHccOOjebhKsrvsKqhdh2VkKBOw5gTPeFAUIE4ucdp+m6Ku8vDPNqEHu2V9JXIiqgyPnuFVN1RtGskCYc4ivFBgLiWdmw8w83xpfM9Vet//+xetDWYIAyUBbMF00K6Jl8UK4dpaQfAcM8YHPZDqxYZfJitRHxa/MeQb3WJwCtV/Yq8ne49LqJAzGuflIsPfQF9VQ0hJt2q4r7vzufy4KvyPQOl40z1r4lKtwFZo1hgBMHxcGWpxS5hRB+5x+clqoGePxB9vTxjfMYh0mMXn7KTb8cVHlSJ5JDnOV'
       type: 'ssh-rsa'
       
+#account rpm
+mopensuse::user::rpm::password: 'secret'
+mopensuse::user::rpm::username: 'rpm'
+mopensuse::user::rpm::user_home_path: '/home/rpm'
+mopensuse::user::rpm::realname: 'Marcin Morawski (rpm)'
+mopensuse::user::rpm::ssh_keys:
+   marcin.morawski.work:
+      key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDZDsJ38k7nRmVqGLUIpctPHW+Keo4v6eF3MFqVzgRImaspB+hfI/2zP5PjMiTxtVSkMOPSrii2hgSdFA5wElrK5JW7XFNWdNvky/d/Df0VBCADO5I7fRg3kfUDOG+GGLCzYZvfLyZ+EsveJ0Q65Pe24W51lZ28I48LedYEjXfgZ0yoDDCa8MEQH58Id1QZKFi/sR+bgHBqug3zARO/fQIebkmD3BCssahGzxOpWo8n1FrRDxw0vcF9urghm+P4aemDBPf+NOCJguDjwFaWhxQzAK/AMNo8CaEY+rMabFLMwGXUw1TPWXl48i71UzCk/Gdd9KW+aY4g7Pk4pTHLJkw9'
+      type: 'ssh-rsa'
+   morawskim:
+      key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDZpPxCj3WW031TTVkxI520OwqNsXccG5Lg1QC8QBBzO/RnTmyLZHccOOjebhKsrvsKqhdh2VkKBOw5gTPeFAUIE4ucdp+m6Ku8vDPNqEHu2V9JXIiqgyPnuFVN1RtGskCYc4ivFBgLiWdmw8w83xpfM9Vet//+xetDWYIAyUBbMF00K6Jl8UK4dpaQfAcM8YHPZDqxYZfJitRHxa/MeQb3WJwCtV/Yq8ne49LqJAzGuflIsPfQF9VQ0hJt2q4r7vzufy4KvyPQOl40z1r4lKtwFZo1hgBMHxcGWpxS5hRB+5x+clqoGePxB9vTxjfMYh0mMXn7KTb8cVHlSJ5JDnOV'
+      type: 'ssh-rsa'
+
 #samba  
 samba::server::workgroup: 'WORKGROUP'
 samba::server::server_string: 'Samba on openSUSE'
