@@ -81,4 +81,7 @@
 	url = https://github.com/morawskim/puppet-ca_cert.git
 [submodule "modules/phpfpm"]
 	path = modules/phpfpm
-	url = git@github.com:morawskim/puppet-phpfpm.git
+	url = https://github.com/morawskim/puppet-phpfpm.git
+[submodule "modules/inifile"]
+	path = modules/inifile
+	url = https://github.com/puppetlabs/puppetlabs-inifile.git
