@@ -79,3 +79,6 @@
 [submodule "modules/ca_cert"]
 	path = modules/ca_cert
 	url = https://github.com/morawskim/puppet-ca_cert.git
+[submodule "modules/phpfpm"]
+	path = modules/phpfpm
+	url = git@github.com:morawskim/puppet-phpfpm.git
