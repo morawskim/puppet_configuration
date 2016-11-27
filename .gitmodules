@@ -85,3 +85,6 @@
 [submodule "modules/inifile"]
 	path = modules/inifile
 	url = https://github.com/puppetlabs/puppetlabs-inifile.git
+[submodule "modules/certs"]
+	path = modules/certs
+	url = https://github.com/Katello/puppet-certs.git
