@@ -88,3 +88,6 @@
 [submodule "modules/certs"]
 	path = modules/certs
 	url = https://github.com/Katello/puppet-certs.git
+[submodule "modules/file_capability"]
+	path = modules/file_capability
+	url = https://github.com/smoeding/puppet-file_capability.git
