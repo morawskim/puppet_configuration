@@ -91,3 +91,6 @@
 [submodule "modules/file_capability"]
 	path = modules/file_capability
 	url = https://github.com/smoeding/puppet-file_capability.git
+[submodule "modules/phpmyadmin"]
+	path = modules/phpmyadmin
+	url = https://github.com/morawskim/puppet-phpmyadmin.git
