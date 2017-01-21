@@ -76,3 +76,5 @@ mprojects::apache::mydeal::vhost_document_root: '/home/marcin/projekty/mydeal/my
 mprojects::apache::mydeal_m::project_domain: 'm.mydeal.dev'
 mprojects::apache::mydeal_m::vhost_document_root: '/home/marcin/projekty/mydeal/m.mydeal.dev'
 mprojects::apache::mydeal_m::mydeal_domain: 'mydeal.dev'
+mysql::server::package_manage: false
+mysql::client::package_name: 'mariadb-tools'
