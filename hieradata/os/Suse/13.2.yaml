@@ -1,0 +1,7 @@
+---
+mopensuse::zypper::repositories::benchmark::enabled: 0
+mopensuse::zypper::repositories::devel_tools_building::enabled: 0
+mopensuse::zypper::repositories::kde_kup::enabled: 0
+mopensuse::zypper::repositories::debug::enabled: 0
+mopensuse::zypper::repositories::debug_update::enabled: 0
+mopensuse::zypper::repositories::systemsmanagement_machinery::enabled: 0
