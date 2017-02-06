@@ -5,3 +5,4 @@ mopensuse::zypper::repositories::kde_kup::enabled: 0
 mopensuse::zypper::repositories::debug::enabled: 0
 mopensuse::zypper::repositories::debug_update::enabled: 0
 mopensuse::zypper::repositories::systemsmanagement_machinery::enabled: 0
+mopensuse::zypper::repositories::x11_utilities::enabled: 0
