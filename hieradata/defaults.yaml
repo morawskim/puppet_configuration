@@ -4,6 +4,7 @@ mopensuse::packages::x11vnc::vnc_password: 'secretpassword'
 mopensuse::packages::mysql::mysql_root_password: 'secretpassword'
 mopensuse::packages::postfix::sasl_passwd: 'smtp.gmail.com:587 username@gmail.com:password'
 mopensuse::packages::jenkins::service_enable: false
+mopensuse::packages::jenkins::service_ensure: 'stopped'
 
 #account
 mopensuse::user::marcin::password: 'secret'
