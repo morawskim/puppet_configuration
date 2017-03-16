@@ -10,3 +10,4 @@ mopensuse::zypper::repositories::games_tools::enabled: 0
 mopensuse::zypper::repositories::multimedia_apps::enabled: 0
 mopensuse::zypper::repositories::devel_tools::enabled: 0
 mopensuse::zypper::repositories::server_database::enabled: 0
+mopensuse::zypper::repositories::devel-languages-python::enabled: 0
