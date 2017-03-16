@@ -11,3 +11,4 @@ mopensuse::zypper::repositories::multimedia_apps::enabled: 0
 mopensuse::zypper::repositories::devel_tools::enabled: 0
 mopensuse::zypper::repositories::server_database::enabled: 0
 mopensuse::zypper::repositories::devel-languages-python::enabled: 0
+mopensuse::zypper::repositories::devel_languages_python3::enabled: 0
