@@ -72,11 +72,29 @@ mprojects::eoview_api::vscrepo_source: 'svn_repo'
 mprojects::eoview_partner::vscrepo_source: 'svn_repo'
 mprojects::eoview_saas::vscrepo_source: 'svn_repo'
 
+mprojects::mydeal::vscrepo_source: 'git@gl.booksy.net:mydeal/mydeal.git'
+mprojects::mydeal::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
 mprojects::apache::mydeal::project_domain: 'mydeal.dev'
-mprojects::apache::mydeal::vhost_document_root: '/home/marcin/projekty/mydeal/mydeal.dev'
+mprojects::apache::mydeal::vhost_document_root: '/home/marcin/projekty/mydeal/mydeal.dev-container/mydeal.dev/'
 
-mprojects::apache::mydeal_m::project_domain: 'm.mydeal.dev'
-mprojects::apache::mydeal_m::vhost_document_root: '/home/marcin/projekty/mydeal/m.mydeal.dev'
-mprojects::apache::mydeal_m::mydeal_domain: 'mydeal.dev'
+mprojects::mydeal_api::vscrepo_source: 'git@mydeal-bitbucket:mydealepicode/api.git'
+mprojects::mydeal_api::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::apache::mydeal_api::project_domain: 'api.mydeal.dev'
+mprojects::apache::mydeal_api::vhost_document_root: '/home/marcin/projekty/mydeal/api.mydeal.dev/web/'
+mprojects::apache::mydeal_api::mydeal_domain: 'mydeal.dev'
+
+mprojects::mydeal_mobile::vscrepo_source: 'git@gl.booksy.net:mydeal/mobile'
+mprojects::mydeal_mobile::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::apache::mydeal_mobile::project_domain: 'm.mydeal.dev'
+mprojects::apache::mydeal_mobile::vhost_document_root: '/home/marcin/projekty/mydeal/m.mydeal.dev/'
+mprojects::apache::mydeal_mobile::mydeal_domain: 'mydeal.dev'
+
+mprojects::mydeal_oldadmin::vscrepo_source: 'git@gl.booksy.net:mydeal/oldadmin'
+mprojects::mydeal_oldadmin::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::mydeal_oldadmin::mydeal_img_symlink: ''
+mprojects::apache::mydeal_oldadmin::project_domain: 'oldadmin.mydeal.dev'
+mprojects::apache::mydeal_oldadmin::vhost_document_root: '/home/marcin/projekty/mydeal/oldadmin.mydeal.dev/'
+mprojects::apache::mydeal_oldadmin::mydeal_domain: 'mydeal.dev'
+
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
