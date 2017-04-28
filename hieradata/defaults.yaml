@@ -75,10 +75,11 @@ mprojects::eoview_saas::vscrepo_source: 'svn_repo'
 mprojects::mydeal::vscrepo_source: 'git@gl.booksy.net:mydeal/mydeal.git'
 mprojects::mydeal::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
 mprojects::apache::mydeal::project_domain: 'mydeal.dev'
+mprojects::apache::mydeal::static_domain: 'mydil.dev'
 mprojects::apache::mydeal::vhost_document_root: '/home/marcin/projekty/mydeal/mydeal.dev-container/mydeal.dev/'
 mprojects::apache::mydeal::vhost_aliases:
    - www.mydeal.dev
-   - mydil.dev
+   - static.mydeal.dev
 
 mprojects::mydeal_api::vscrepo_source: 'git@mydeal-bitbucket:mydealepicode/api.git'
 mprojects::mydeal_api::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
