@@ -2,7 +2,7 @@
 :backends:
     - yaml
 :yaml:
-  :datadir: "/vagrant/puppet/hieradata"
+  :datadir: "/tmp/vagrant-puppet/hieradata"
 :hierarchy:
   - secret
   - "node/%{::fqdn}"
