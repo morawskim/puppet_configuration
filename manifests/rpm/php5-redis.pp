@@ -10,10 +10,6 @@ node default {
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
-    exec { 'zypper_update':
-        command => '/usr/bin/zypper --non-interactive --no-color update',
-        require => Class['mopensuse::zypper::refresh']
-    }
 
     package {['php5', 'php5-devel']:
         ensure  => present,

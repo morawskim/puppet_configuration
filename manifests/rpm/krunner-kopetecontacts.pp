@@ -13,10 +13,6 @@ node default {
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
-    exec { 'zypper_update':
-        command => '/usr/bin/zypper --non-interactive --no-color update',
-        require => Class['mopensuse::zypper::refresh']
-    }
 
     #cmake gcc-c++
     package { ['kopete-devel']:
