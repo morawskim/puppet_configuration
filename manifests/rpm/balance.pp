@@ -20,13 +20,4 @@ node default {
         require => [ Class['mopensuse::user::rpm'], Class['mopensuse::packages::vcs'] ]
     }
 
-    # $facts['vagrant'] Only works with Puppet 3.5 or later. Disabled by default in open source releases prior to Puppet 4.0.
-    if $vagrant {
-        file {'/vagrant':
-            ensure  => directory,
-            mode    => '0755',
-            owner   => 'vagrant',
-            group   => 'root',
-        }
-    }
 }

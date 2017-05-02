@@ -57,26 +57,11 @@ node default {
         require => [ Class['mopensuse::user::rpm'], Package['git'] ]
     }
 
-    # $facts['vagrant'] Only works with Puppet 3.5 or later. Disabled by default in open source releases prior to Puppet 4.0.
-    if $vagrant {
-        file {'/vagrant':
-            ensure  => directory,
-            mode    => '0755',
-            owner   => 'vagrant',
-            group   => 'root',
-        }
-    }
 
     #TODO: XXX what if we will build package by jenkins?
     #$spec_file='php56.spec'
     #$build_log_path="${rpm_home}/build-$spec_file"
     #exec { 'build_rpm_package':
-    #    command     => "/vagrant/build-spec.sh '$rpmbuild_top' '$spec_file' 2>&1 | tee $build_log_path",
-    #    user        => 'rpm',
-    #    path        => ['/usr/local/bin', '/usr/bin:/bin'],
-    #    #logoutput   => true,
-    #    timeout     => 0,
-    #    environment => ["HOME=${rpm_home}"],
     #    require     => Vcsrepo[$rpmbuild_top] 
     #}
 }
