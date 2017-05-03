@@ -19,7 +19,7 @@ node default {
         require => [ Class['mopensuse::user::rpm'], Package['git'] ]
     }
 
-    package { 'ncurses-devel', 'automake', 'pkg-config', 'readline-devel':
+    package { ['ncurses-devel', 'automake', 'pkg-config', 'readline-devel']:
         ensure => present
     }
 
