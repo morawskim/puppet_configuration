@@ -19,7 +19,7 @@ node default {
         require => [ Class['mopensuse::user::rpm'], Package['git'] ]
     }
 
-    package { 'fontpackages-devel', 'unzip':
+    package { ['fontpackages-devel', 'unzip']:
         ensure => present
     }
 
