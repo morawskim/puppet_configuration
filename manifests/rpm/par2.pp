@@ -19,7 +19,7 @@ node default {
         require => [ Class['mopensuse::user::rpm'], Package['git'] ]
     }
 
-    package { 'gcc-c++', 'libstdc++-devel', 'dos2unix', 'automake':
+    package { ['gcc-c++', 'libstdc++-devel', 'dos2unix', 'automake']:
         ensure => present
     }
 
