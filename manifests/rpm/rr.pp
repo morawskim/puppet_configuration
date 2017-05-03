@@ -25,7 +25,7 @@ node default {
     vcsrepo { $rpmbuild_top:
         ensure   => present,
         provider => git,
-        source   => 'https://github.com/morawskim/rpmbuild.git',
+        source   => hiera('morawskim_repository_url', 'git://github.com/morawskim/rpmbuild.git'),
         revision => "openSUSE_${::operatingsystemrelease}",
         owner    => 'rpm',
         group    => 'users',
