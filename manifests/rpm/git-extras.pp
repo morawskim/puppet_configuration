@@ -9,7 +9,7 @@ node default {
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
 
-    package {['rubygem-ronn', 'git']:
+    package {['ruby2.1-rubygem-ronn', 'git']:
         ensure  => present,
         require => Class['mopensuse::zypper::repositories::ruby_extensions']
     }
