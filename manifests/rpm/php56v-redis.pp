@@ -11,7 +11,7 @@ node default {
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
 
-    package {['php56', 'php56-devel']:
+    package {['php56v', 'php56v-devel']:
         ensure  => present,
         require => Class['mopensuse::zypper::repositories::morawskim']
     }
