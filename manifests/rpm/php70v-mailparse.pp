@@ -10,7 +10,7 @@ node default {
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
 
-    package {['php7', 'php7-devel', 'git', 're2c']:
+    package {['php70v', 'php70v-devel', 'git', 're2c']:
         ensure  => present,
         require => Class['mopensuse::zypper::repositories::morawskim']
     }
