@@ -19,7 +19,7 @@ node default {
         require => [ Class['mopensuse::user::rpm'], Package['git'] ]
     }
 
-    package { 'openssl-devel':
+    package { 'libopenssl-devel':
         ensure => present
     }
 
