@@ -11,7 +11,7 @@ node default {
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
 
-    package {['php53m', 'php53m-devel', 'php53m-soap']:
+    package {['php53v', 'php53v-devel', 'php53v-soap']:
         ensure  => present,
         require => Class['mopensuse::zypper::repositories::morawskim']
     }
