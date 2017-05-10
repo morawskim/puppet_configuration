@@ -80,6 +80,7 @@ mprojects::apache::mydeal::vhost_document_root: '/home/marcin/projekty/mydeal/my
 mprojects::apache::mydeal::vhost_aliases:
    - www.mydeal.dev
    - static.mydeal.dev
+   - '*.mydeal.dev'
 
 mprojects::mydeal_api::vscrepo_source: 'git@mydeal-bitbucket:mydealepicode/api.git'
 mprojects::mydeal_api::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
