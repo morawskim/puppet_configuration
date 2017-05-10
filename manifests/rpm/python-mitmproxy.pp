@@ -5,19 +5,19 @@ node default {
     include mopensuse::packages::rpmbuild
     include mopensuse::packages::vcs
     include mopensuse::zypper::repositories::devel-languages-python
-    include mopensuse::zypper::repositories::morawskim
 
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
 
     package {['python-base', 'python-setuptools', 'python-Sphinx']:
-        ensure  => present
+        ensure  => present,
+        require => Class['mopensuse::zypper::repositories::devel-languages-python']
     }
 
-    package {['python-sphinxcontrib-documentedlis']:
+    package {['python-sphinxcontrib-documentedlist', 'python-devel', 'python-pip']:
         ensure  => present,
-        require => Class['mopensuse::zypper::repositories::morawskim']
+        require => Class['mopensuse::zypper::repositories::devel-languages-python']
     }
 
     vcsrepo { $rpmbuild_top:
