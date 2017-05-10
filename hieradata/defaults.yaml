@@ -101,5 +101,12 @@ mprojects::apache::mydeal_oldadmin::project_domain: 'oldadmin.mydeal.dev'
 mprojects::apache::mydeal_oldadmin::vhost_document_root: '/home/marcin/projekty/mydeal/oldadmin.mydeal.dev/'
 mprojects::apache::mydeal_oldadmin::mydeal_domain: 'mydeal.dev'
 
+mprojects::dpd::vscrepo_source: 'git@gl.booksy.net:dpd/city.git'
+mprojects::dpd::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::apache::dpd_city_api::project_domain: 'api.dpd-city.dev'
+mprojects::apache::dpd_city_api::vhost_document_root: '/home/marcin/projekty/dpd/dpd-city.dev/api/web/'
+mprojects::apache::dpd_city_backend::project_domain: 'dpd-city.dev'
+mprojects::apache::dpd_city_backend::vhost_document_root: '/home/marcin/projekty/dpd/dpd-city.dev/backend/web/'
+
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
