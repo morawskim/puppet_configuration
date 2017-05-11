@@ -16,34 +16,7 @@ node default {
         require => Class['mopensuse::zypper::repositories::morawskim']
     }
 
-    if $::operatingsystemrelease > 13.2 {
-         include mopensuse::zypper::repositories::devel_languages_c_cpp
-        package {['libssh2-devel']:
-          ensure  => latest,
-          install_options => [ {'--from' => 'devel_libraries_c_cpp'}, '--force' ],
-        }
-
-        package {['libssh2-1']:
-          ensure  => latest,
-          install_options => [ {'--from' => 'devel_libraries_c_cpp'}, '--force' ],
-          require => Class['mopensuse::zypper::repositories::devel_libraries_c_cpp'],
-          before  => Package['libssh2-devel']
-        }
-    } else {
-        include mopensuse::zypper::repositories::server_php_extensions
-
-        package {['libssh2-devel']:
-          ensure  => latest,
-          install_options => [ {'--from' => 'server_php_extensions'}, '--force' ],
-        }
-
-        package {['libssh2-1']:
-          ensure  => latest,
-          install_options => [ {'--from' => 'server_php_extensions'}, '--force' ],
-          require => Class['mopensuse::zypper::repositories::server_php_extensions'],
-          before  => Package['libssh2-devel']
-        }
-    }
+    include mopensuse::packages::libssh2_devel
 
     vcsrepo { $rpmbuild_top:
         ensure   => present,
