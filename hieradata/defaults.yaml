@@ -107,6 +107,8 @@ mprojects::apache::dpd_city_api::project_domain: 'api.dpd-city.dev'
 mprojects::apache::dpd_city_api::vhost_document_root: '/home/marcin/projekty/dpd/dpd-city.dev/api/web/'
 mprojects::apache::dpd_city_backend::project_domain: 'dpd-city.dev'
 mprojects::apache::dpd_city_backend::vhost_document_root: '/home/marcin/projekty/dpd/dpd-city.dev/backend/web/'
+mprojects::apache::dpd_city_ws::project_domain: 'ws.dpd-city.dev'
+mprojects::apache::dpd_city_ws::vhost_document_root: '/home/marcin/projekty/dpd/dpd-city.dev/soap/web/'
 
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
