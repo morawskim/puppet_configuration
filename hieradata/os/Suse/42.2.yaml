@@ -1,0 +1,3 @@
+---
+mopensuse::packages::ungifsicle::ensure: 'absent'
+mopensuse::packages::kiwi_config_opensuse::ensure: 'absent'
