@@ -20,6 +20,22 @@ mopensuse::user::marcin::owncloud_desktop_http_user: 'marcin'
 mopensuse::user::marcin::owncloud_desktop_url: 'https://owncloud.morawskim.pl'
 mopensuse::user::marcin::owncloud_desktop_user: 'marcin'
 
+mopensuse::user::marcin::kopete_account_id: '1104927'
+mopensuse::user::marcin::kopete_exclude_connect: ''
+mopensuse::user::marcin::kopete_identity: ''
+mopensuse::user::marcin::kopete_password_is_wrong: ''
+mopensuse::user::marcin::kopete_priority: ''
+mopensuse::user::marcin::kopete_protocol: 'gadu'
+mopensuse::user::marcin::kopete_remember_password: '1'
+mopensuse::user::marcin::kopete_export_list_on_change: '1'
+mopensuse::user::marcin::kopete_ignore_anons: 1
+mopensuse::user::marcin::kopete_import_list_on_login: 1
+mopensuse::user::marcin::kopete_nick_name: 1
+mopensuse::user::marcin::kopete_use_dcc: 1
+mopensuse::user::marcin::kopete_use_encrypted_connection: 1
+
+
+
 mopensuse::user::marcin::ssh_keys:
    marcin.morawski.work:
       key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDZDsJ38k7nRmVqGLUIpctPHW+Keo4v6eF3MFqVzgRImaspB+hfI/2zP5PjMiTxtVSkMOPSrii2hgSdFA5wElrK5JW7XFNWdNvky/d/Df0VBCADO5I7fRg3kfUDOG+GGLCzYZvfLyZ+EsveJ0Q65Pe24W51lZ28I48LedYEjXfgZ0yoDDCa8MEQH58Id1QZKFi/sR+bgHBqug3zARO/fQIebkmD3BCssahGzxOpWo8n1FrRDxw0vcF9urghm+P4aemDBPf+NOCJguDjwFaWhxQzAK/AMNo8CaEY+rMabFLMwGXUw1TPWXl48i71UzCk/Gdd9KW+aY4g7Pk4pTHLJkw9'
