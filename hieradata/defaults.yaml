@@ -128,3 +128,5 @@ mprojects::apache::dpd_city_ws::vhost_document_root: '/home/marcin/projekty/dpd/
 
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
+
+wget::manage_package: false
