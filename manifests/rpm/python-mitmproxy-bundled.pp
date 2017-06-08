@@ -12,7 +12,7 @@ node default {
 
 
     package {['python-base', 'python-setuptools',
-      'python-devel', 'python-pip',
+      'python-devel', 'python-pip', 'python-virtualenv',
       'python-Sphinx', 'python-sphinxcontrib-documentedlist']:
         ensure  => present,
         require => Class['mopensuse::zypper::repositories::devel-languages-python']
