@@ -122,6 +122,12 @@ mprojects::apache::mydeal_oldadmin::mydeal_domain: 'mydeal.dev'
 mprojects::apache::mydeal_kodyrabatowe::project_domain: 'kodyrabatowe.wp.dev'
 mprojects::apache::mydeal_kodyrabatowe::vhost_document_root: '/home/marcin/projekty/mydeal/kodyrabatowe/'
 
+mprojects::mydeal_nawywczasie::vscrepo_source: 'git@gl.booksy.net:mydeal/blog'
+mprojects::mydeal_nawywczasie::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::mydeal_nawywczasie::mydeal_blog_symlink: '/home/marcin/projekty/mydeal/mydeal.dev-container/mydeal.dev/nawywczasie/'
+mprojects::apache::mydeal_nawywczasie::project_domain: 'nawywczasie.dev'
+mprojects::apache::mydeal_nawywczasie::vhost_document_root: '/home/marcin/projekty/mydeal/nawywczasie.dev/'
+
 mprojects::dpd::vscrepo_source: 'git@gl.booksy.net:dpd/city.git'
 mprojects::dpd::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
 mprojects::apache::dpd_city_api::project_domain: 'api.dpd-city.dev'
