@@ -11,6 +11,18 @@ mopensuse::user::marcin::password: 'secret'
 mopensuse::user::marcin::username: 'marcin'
 mopensuse::user::marcin::user_home_path: '/home/marcin'
 mopensuse::user::marcin::realname: 'Marcin Morawski'
+mopensuse::user::marcin::groups:
+  - www
+  - vboxusers
+  - vagrant
+  - users
+  - tomcat
+  - systemd-journal
+  - sshfs
+  - docker
+  - disk
+  - dialout
+
 mopensuse::user::marcin::git_user_name: 'Marcin Morawski'
 mopensuse::user::marcin::git_user_email: 'marcin@morawskim.pl'
 mopensuse::user::marcin::git_diff_tool: 'kdiff3'
