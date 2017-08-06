@@ -164,6 +164,30 @@ mprojects::apache::foodtruck_backend::vhost_document_root: '/home/marcin/projekt
 mprojects::apache::icar_dashboard::project_domain: 'dashboard.icar.dev'
 mprojects::apache::icar_dashboard::vhost_document_root: '/home/marcin/projekty/icar/dashboard/'
 
+mprojects::apache::itaxi_adminlite::project_domain: 'cc.itaxi.dev'
+mprojects::apache::itaxi_adminlite::vhost_document_root: '/home/marcin/projekty/itaxi/adminlite/admin/'
+
+mprojects::apache::itaxi_creditcards::project_domain: 'karty.itaxi.dev'
+mprojects::apache::itaxi_creditcards::vhost_document_root: '/home/marcin/projekty/projekty/itaxi/creditcards/web/'
+
+mprojects::apache::itaxi_driver::project_domain: 'kierowca.itaxi.dev'
+mprojects::apache::itaxi_driver::vhost_document_root: '/home/marcin/projekty/itaxi/driver/'
+
+mprojects::apache::itaxi_forum::project_domain: 'forum.itaxi.dev'
+mprojects::apache::itaxi_forum::vhost_document_root: '/home/marcin/projekty/itaxi/forum/forum'
+
+mprojects::apache::itaxi_passengerzone::project_domain: 'strefa-pasazera.itaxi.dev'
+mprojects::apache::itaxi_passengerzone::vhost_document_root: '/home/marcin/projekty/itaxi/passengerzone/strefaklienta/'
+
+mprojects::apache::itaxi_registerbusiness::project_domain: 'biznes-rejestracja.itaxi.dev'
+mprojects::apache::itaxi_registerbusiness::vhost_document_root: '/home/marcin/projekty/itaxi/registerbusiness/registerbusiness/'
+
+mprojects::apache::itaxi_sendlink::project_domain: 'sendlink.itaxi.dev'
+mprojects::apache::itaxi_sendlink::vhost_document_root: '/home/marcin/projekty/itaxi/sendlink/frontend/web/'
+
+mprojects::apache::itaxi_wordpress::project_domain: 'itaxi.dev'
+mprojects::apache::itaxi_wordpress::vhost_document_root: '/home/marcin/projekty/itaxi/wordpress/'
+
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
 
