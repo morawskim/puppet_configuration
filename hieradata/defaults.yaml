@@ -149,6 +149,11 @@ mprojects::apache::dpd_city_backend::vhost_document_root: '/home/marcin/projekty
 mprojects::apache::dpd_city_ws::project_domain: 'ws.dpd-city.dev'
 mprojects::apache::dpd_city_ws::vhost_document_root: '/home/marcin/projekty/dpd/dpd-city.dev/soap/web/'
 
+mprojects::carcliq_drupal::vscrepo_source: 'git@bitbucket-work:carcliq/www.carcliq.co.uk.git'
+mprojects::carcliq_drupal::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::apache::carcliq_drupal::project_domain: 'carcliq.dev'
+mprojects::apache::carcliq_drupal::vhost_document_root: '/home/marcin/projekty/carcliq/carcliq.dev/'
+
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
 
