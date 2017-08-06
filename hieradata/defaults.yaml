@@ -154,6 +154,13 @@ mprojects::carcliq_drupal::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
 mprojects::apache::carcliq_drupal::project_domain: 'carcliq.dev'
 mprojects::apache::carcliq_drupal::vhost_document_root: '/home/marcin/projekty/carcliq/carcliq.dev/'
 
+mprojects::apache::foodtruck_api::project_domain: 'api.foodtruck.dev'
+mprojects::apache::foodtruck_api::vhost_document_root: '/home/marcin/projekty/foodtruck/foodtruck/api/web/'
+mprojects::apache::foodtruck_apibiz::project_domain: 'apibiz.foodtruck.dev'
+mprojects::apache::foodtruck_apibiz::vhost_document_root: '/home/marcin/projekty/foodtruck/foodtruck/apibiz/web/'
+mprojects::apache::foodtruck_backend::project_domain: 'admin.foodtruck.dev'
+mprojects::apache::foodtruck_backend::vhost_document_root: '/home/marcin/projekty/foodtruck/foodtruck/backend/web/'
+
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
 
