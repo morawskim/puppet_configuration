@@ -188,8 +188,12 @@ mprojects::apache::itaxi_sendlink::vhost_document_root: '/home/marcin/projekty/i
 mprojects::apache::itaxi_wordpress::project_domain: 'itaxi.dev'
 mprojects::apache::itaxi_wordpress::vhost_document_root: '/home/marcin/projekty/itaxi/wordpress/'
 
+
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
+
+# See mopensuse::packages::gui::chrome for reason why this repo is disabled
+mopensuse::zypper::repositories::google-chrome::enabled: 0
 
 wget::manage_package: false
 git_daemon_paths:
