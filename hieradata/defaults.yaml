@@ -188,6 +188,11 @@ mprojects::apache::itaxi_sendlink::vhost_document_root: '/home/marcin/projekty/i
 mprojects::apache::itaxi_wordpress::project_domain: 'itaxi.dev'
 mprojects::apache::itaxi_wordpress::vhost_document_root: '/home/marcin/projekty/itaxi/wordpress/'
 
+mprojects::drupal::vscrepo_source: 'https://github.com/drupal/drupal.git'
+mprojects::drupal::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::apache::drupal::project_domain: 'drupal.dev'
+mprojects::apache::drupal::vhost_document_root: '/home/marcin/projekty/drupal/drupal.dev/'
+
 
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
