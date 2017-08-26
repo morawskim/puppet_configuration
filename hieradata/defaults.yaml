@@ -188,6 +188,11 @@ mprojects::apache::itaxi_sendlink::vhost_document_root: '/home/marcin/projekty/i
 mprojects::apache::itaxi_wordpress::project_domain: 'itaxi.dev'
 mprojects::apache::itaxi_wordpress::vhost_document_root: '/home/marcin/projekty/itaxi/wordpress/'
 
+mprojects::rigips::vscrepo_source: 'git@oxmedia-bitbucket:oxmedia/rigipspl.git'
+mprojects::rigips::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::apache::rigips::project_domain: 'rigips.dev'
+mprojects::apache::rigips::vhost_document_root: '/home/marcin/projekty/oxmedia/rigips.dev/'
+
 mprojects::drupal::vscrepo_source: 'https://github.com/drupal/drupal.git'
 mprojects::drupal::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
 mprojects::apache::drupal::project_domain: 'drupal.dev'
