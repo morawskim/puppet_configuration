@@ -198,12 +198,8 @@ mprojects::drupal::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
 mprojects::apache::drupal::project_domain: 'drupal.dev'
 mprojects::apache::drupal::vhost_document_root: '/home/marcin/projekty/drupal/drupal.dev/'
 
-
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
-
-# See mopensuse::packages::gui::chrome for reason why this repo is disabled
-mopensuse::zypper::repositories::google-chrome::enabled: 0
 
 wget::manage_package: false
 git_daemon_paths:
