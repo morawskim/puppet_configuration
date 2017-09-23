@@ -23,7 +23,7 @@ node default {
         'libzip-devel', 'ncurses-devel', 'net-snmp-devel', 'openldap2-devel',
         'pam-devel', 'pcre-devel', 'pkg-config', 'systemd-devel',
         'libvpx-devel', 'libXft-devel', 'libXpm-devel', 'postfix',
-        're2c', 'sqlite2-devel',
+        're2c', 'sqlite2-devel', 'argon2', 'argon2-devel',
         'sqlite3-devel', 'tcpd-devel', 'unixODBC-devel', 'update-alternatives',
         'xorg-x11-devel', 'xz', 'git']:
         ensure  => present,
