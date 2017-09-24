@@ -25,7 +25,7 @@ node default {
         'libvpx-devel', 'libXft-devel', 'libXpm-devel', 'postfix',
         're2c', 'sqlite2-devel', 'argon2', 'argon2-devel',
         'sqlite3-devel', 'tcpd-devel', 'unixODBC-devel', 'update-alternatives',
-        'xorg-x11-devel', 'xz', 'git']:
+        'xorg-x11-devel', 'xz', 'git', 'libsodium-devel']:
         ensure  => present,
         require => Package['exim']
     }
