@@ -4,7 +4,7 @@ node default {
     include mopensuse::user::rpm
     include mopensuse::packages::rpmbuild
     include mopensuse::packages::vcs
-    include mopensuse::zypper::repositories::devel-languages-python
+    include mopensuse::zypper::repositories::devel_languages_python
 
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
@@ -13,7 +13,7 @@ node default {
     package {['python-devel', 'python-fuse', 'python-xattr',
       'python-pylibacl', 'python-tornado', 'git-core', 'pandoc']:
         ensure  => present,
-        require => Class['mopensuse::zypper::repositories::devel-languages-python']
+        require => Class['mopensuse::zypper::repositories::devel_languages_python']
     }
 
     vcsrepo { $rpmbuild_top:
