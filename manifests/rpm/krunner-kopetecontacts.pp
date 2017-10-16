@@ -5,7 +5,7 @@ node default {
     include mopensuse::zypper::repositories::morawskim
     include mopensuse::zypper::repositories::server_monitoring
     include mopensuse::packages::devel_c_cpp
-    include mopensuse::packages::devel-kde
+    include mopensuse::packages::devel_kde
     include mopensuse::packages::rpmbuild
     include mopensuse::packages::vcs
     include mopensuse::user::rpm
