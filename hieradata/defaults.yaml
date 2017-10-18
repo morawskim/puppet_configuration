@@ -1,5 +1,5 @@
 ---
-mopensuse::packages::php-dev-scripts::github_oauth_token: 'secrettoken'
+mopensuse::packages::php_dev_scripts::github_oauth_token: 'secrettoken'
 mopensuse::packages::x11vnc::vnc_password: 'secretpassword'
 mopensuse::packages::mysql::mysql_root_password: 'secretpassword'
 mopensuse::packages::postfix::sasl_passwd: 'smtp.gmail.com:587 username@gmail.com:password'
