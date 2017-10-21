@@ -371,3 +371,396 @@ mopensuse::rpmkeys::morawskim:
     source: 'https://gist.githubusercontent.com/morawskim/1f98a9e766e447285751fdea5d9f91a4/raw/ca313769505211384ed6029e81c57427687e1add/RPM-GPG-KEY-morawskim'
     name: '2FB7B3CB'
     ensure: 'present'
+
+mopensuse::zypper::repositories::kde_frameworks5:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/KDE:/Frameworks5/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'KDE Frameworks 5 development repository (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/KDE:/Frameworks5/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::x11_utilities:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/X11:/Utilities/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'X11 Utilities (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/X11:/Utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::benchmark:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/benchmark/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Benchmarks (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/benchmark/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::devel_libraries_c_cpp:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'A project for basic libraries shared among multiple projects (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::devel_languages_go:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'The Go Programming Language (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::devel_languages_python:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Python Modules (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::devel_languages_python3:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/devel:/languages:/python3/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Python-3 modules (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/python3/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::devel_languages_ruby_extensions:
+    autorefresh: '0'
+    baseurl    : 'http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Ruby Extensions (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::devel_tools:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Generic Development Tools (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::devel_tools_building:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/devel:/tools:/building/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Tools for building software (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/devel:/tools:/building/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::education:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/Education/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Applications for education users (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/Education/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::filesystems:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/filesystems/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Filesystem tools and FUSE-related packages (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/filesystems/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::games_tools:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/games:/tools/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Tools for Gamers (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/games:/tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::google_chrome:
+    autorefresh : '1'
+    baseurl     : 'http://dl.google.com/linux/chrome/rpm/stable/x86_64'
+    descr       : 'Google chrome repository'
+    enabled     : '1'
+    keeppackages: '0'
+    type        : 'rpm-md'
+
+mopensuse::zypper::repositories::hardware:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/hardware/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Hardware tools (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/hardware/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::isv_owncloud_desktop:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'The ownCloud Desktop Client (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::jenkins:
+    autorefresh: '1'
+    baseurl    : 'http://pkg.jenkins-ci.org/opensuse/'
+    descr      : 'Jenkins'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://pkg.jenkins-ci.org/opensuse/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::kde_extra:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Additional packages maintained by the KDE team (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::kde_kup:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/home:/simper:/kup/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Kup Backup System (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/home:/simper:/kup/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::libdvdcss:
+    autorefresh: '1'
+    baseurl    : 'http://opensuse-guide.org/repo/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'libdvdcss Repository (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+
+mopensuse::zypper::repositories::morawskim:
+    autorefresh: '1'
+    baseurl    : 'http://rpm.morawskim.pl/openSUSE:%{::operatingsystemrelease}/'
+    descr      : 'Dodatkowe paczki rpm (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '0'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::multimedia_apps:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/multimedia:/apps/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Multimedia Applications (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/multimedia:/apps/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::network:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/network/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Networking services and related tools (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/network/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::network_utilities:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/network:utilities/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Network Utilities (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/network:utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::packman:
+    autorefresh: '1'
+    baseurl    : 'http://packman.inode.at/suse/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Packman Software Repository (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://packman.inode.at/suse/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::repo_debug:
+    autorefresh : '1'
+    baseurl     : 'http://download.opensuse.org/debug/distribution/leap/%{::operatingsystemrelease}/repo/oss/'
+    descr       : 'openSUSE-Leap-%{::operatingsystemrelease}-Debug'
+    enabled     : '0'
+    keeppackages: '0'
+    #path        : '/'
+    type        : 'yast2'
+
+mopensuse::zypper::repositories::repo_debug_non_oss:
+    autorefresh : '1'
+    baseurl     : 'http://download.opensuse.org/debug/distribution/leap/%{::operatingsystemrelease}/repo/non-oss/'
+    descr       : 'openSUSE-Leap-%{::operatingsystemrelease}-Debug-Non-Oss'
+    enabled     : '0'
+    keeppackages: '0'
+    #path        : '/'
+    type        : 'yast2'
+
+mopensuse::zypper::repositories::repo_debug_update:
+    autorefresh : '1'
+    baseurl     : 'http://download.opensuse.org/debug/update/leap/%{::operatingsystemrelease}/oss/'
+    descr       : 'openSUSE-Leap-%{::operatingsystemrelease}-Update-Debug'
+    enabled     : '0'
+    keeppackages: '0'
+    path        : '/'
+    type        : 'yast2'
+
+mopensuse::zypper::repositories::repo_debug_update_non_oss:
+    autorefresh : '1'
+    baseurl     : 'http://download.opensuse.org/debug/update/leap/%{::operatingsystemrelease}/non-oss/'
+    descr       : 'openSUSE-Leap-%{::operatingsystemrelease}-Update-Debug-Non-Oss'
+    enabled     : '0'
+    keeppackages: '0'
+    path        : '/'
+    type        : 'yast2'
+
+mopensuse::zypper::repositories::repo_source:
+    autorefresh : '1'
+    baseurl     : 'http://download.opensuse.org/source/distribution/leap/%{::operatingsystemrelease}/repo/oss/'
+    descr       : 'openSUSE-Leap-%{::operatingsystemrelease}-Source'
+    enabled     : '1'
+    keeppackages: '0'
+    path        : '/'
+    #type        : 'NONE'
+
+mopensuse::zypper::repositories::repo_source_non_oss:
+    autorefresh : '1'
+    baseurl     : 'http://download.opensuse.org/source/distribution/leap/%{::operatingsystemrelease}/repo/non-oss/'
+    descr       : 'openSUSE-Leap-%{::operatingsystemrelease}-Source-Non-Oss'
+    enabled     : '1'
+    keeppackages: '0'
+    path        : '/'
+    #type        : 'NONE'
+
+mopensuse::zypper::repositories::security:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/security/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Security tools (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/security/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::security_privacy:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/security:/privacy/openSUSE_Leap_%{::operatingsystemrelease}'
+    descr      : 'Crypto applications and utilities (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/security:/privacy/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::security_tools:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/security:tools/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Security tools for auditing and scanning (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/security:tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::server_database:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/server:/database/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Databases (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/server:/database/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::server_mail:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Email services (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::server_monitoring:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/server:/monitoring/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Server Monitoring Software (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/server:/monitoring/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::server_php_extensions:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/server:/php:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'PHP extensions (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/server:/php:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::skype_stable:
+    autorefresh : '1'
+    baseurl     : 'https://repo.skype.com/rpm/stable/'
+    descr       : 'skype (stable)'
+    enabled     : '1'
+    keeppackages: '0'
+    type        : 'rpm-md'
+
+mopensuse::zypper::repositories::slack:
+    autorefresh : '1'
+    baseurl     : 'https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64'
+    descr       : 'Slack'
+    enabled     : '1'
+    gpgcheck    : '0'
+    gpgkey      : 'https://packagecloud.io/gpg.key'
+    keeppackages: '0'
+    type        : 'rpm-md'
+
+mopensuse::zypper::repositories::systemsmanagement_machinery:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/systemsmanagement:/machinery/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Machinery systems management toolkit (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/systemsmanagement:/machinery/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::utilities:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/utilities/openSUSE_Leap_%{::operatingsystemrelease}'
+    descr      : 'all the small tools for the shell (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::virtualization_containers:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Leap_%{::operatingsystemrelease}'
+    descr      : 'Virtualization:containers (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::vivaldi:
+    autorefresh : '1'
+    baseurl     : 'http://repo.vivaldi.com/archive/rpm/x86_64'
+    descr       : 'Vivaldi repository'
+    enabled     : '1'
+    gpgcheck    : '0'
+    gpgkey      : 'https://gist.githubusercontent.com/morawskim/dcee4dd70958c4e9ede389c45f7f8d5f/raw/c47323f1cd395b5c79d0fc23cd2bdb19b6b302df/vivaldi_gpg.pub'
+    keeppackages: '0'
+    type        : 'rpm-md'
+
