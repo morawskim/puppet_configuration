@@ -219,130 +219,155 @@ vagrant_boxes:
         box_provider: 'virtualbox'
         version: ~
 
-rpmkeys:
-    benchmark:
-        source: "http://download.opensuse.org/repositories/benchmark/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '9F1AEE68'
-    devel_libraries_c_cpp:
-        source: "http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '09CA02B0'
-    devel_languages_go:
-        source: "http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '307D7BF9'
-    devel_languages_python3:
-        source: "http://download.opensuse.org/repositories/devel:/languages:/python3/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '628F16E3'
-    devel-languages-python:
-        source: "http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: 'EDF0D733'
-    devel_tools:
-        source: "http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '498D5A23'
-    #devel_tools_building:
-    #    source: "http://download.opensuse.org/repositories/devel:/tools:/building/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-    #    name: '498D5A23'
-    education:
-        source: "http://download.opensuse.org/repositories/Education/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: 'C0951497'
-    filesystems:
-        source: "http://download.opensuse.org/repositories/filesystems/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '324E6311'
-    games_tools:
-        source: "http://download.opensuse.org/repositories/games:/tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '58DDEB32'
-    google-chrome:
-        source: 'https://dl.google.com/linux/linux_signing_key.pub'
-        name: '7FAC5991'
-    hardware:
-        source: "http://download.opensuse.org/repositories/hardware/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: 'D6D11CE4'
-    isv_owncloud_desktop:
-        source: "http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '557BEFF9'
-    jenkins:
-        source: 'http://pkg.jenkins-ci.org/opensuse/repodata/repomd.xml.key'
-        name: 'D50582E6'
-    kde_extra:
-        source: "http://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '0D210A40'
-    KDE_Frameworks5:
-        source: "http://download.opensuse.org/repositories/KDE:/Frameworks5/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '6F88BB2F'
-    kde_kup:
-        source: "http://download.opensuse.org/repositories/home:/simper:/kup/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '82CEBF3D'
-    #kde_qt:
-    #    source: "http://download.opensuse.org/repositories/KDE:/Qt/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-    #    name: '6F88BB2F'
-    libdvdcss:
-        source: "http://opensuse-guide.org/repo/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '6867F5BE'
-    multimedia_apps:
-        source: "http://download.opensuse.org/repositories/multimedia:/apps/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: 'E95B46D4'
-    network:
-        source: "http://download.opensuse.org/repositories/network/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '17280DDF'
-    network_utilities:
-        source: "http://download.opensuse.org/repositories/network:utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '392FFA88'
-    packman:
-        source: "http://packman.inode.at/suse/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '1ABD1AFB'
-    devel_languages_ruby_extensions:
-        source: "http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '0E9AF123'
-    security:
-        source: "http://download.opensuse.org/repositories/security/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: 'EE3D166A'
-    security_privacy:
-        source: "http://download.opensuse.org/repositories/security:/privacy/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: 'E3DBD3CD'
-    #security_tools:
-    #    source: "http://download.opensuse.org/repositories/security:tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-    #    name: 'EE3D166A'
-    server_database:
-        source: "http://download.opensuse.org/repositories/server:/database/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '05905EA8'
-    server_mail:
-        source: "http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '367FE7FC'
-    server_monitoring:
-        source: "http://download.opensuse.org/repositories/server:/monitoring/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: 'EE454F98'
-    server_php_extensions:
-        source: "http://download.opensuse.org/repositories/server:/php:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '1AF1B065'
-    skype:
-        source: "https://repo.skype.com/data/SKYPE-GPG-KEY"
-        name: 'DF7587C3'
-    #slack_packagecloud:
-    #    source: "https://gist.githubusercontent.com/morawskim/8d169cd436bad32bdd034054255db796/raw/7123e2d371cc3d7889a97107d7b4a6f054481b64/gpg_packagecloud.pub"
-    #    name: 'D59097AB'
-    slack:
-        source: "https://gist.githubusercontent.com/morawskim/e417ad8c063ee32c5791777935c588eb/raw/948787b82ed6e98ac382fecf003d719f0f0c23c2/slack_gpg.pub"
-        name: '038651BD'
-    slack_repo:
-        source: "https://packagecloud.io/gpg.key"
-        name: 'D59097AB'
-    systemsmanagement_machinery:
-        source: "http://download.opensuse.org/repositories/systemsmanagement:/machinery/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: 'A0E46E11'
-    utilities:
-        source: "http://download.opensuse.org/repositories/utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '9056621D'
-    virtualization_containers:
-        source: "http://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '72174FC2'
-    vivaldi:
-        source: "https://gist.githubusercontent.com/morawskim/dcee4dd70958c4e9ede389c45f7f8d5f/raw/c47323f1cd395b5c79d0fc23cd2bdb19b6b302df/vivaldi_gpg.pub"
-        name: 'BF1700F8'
-    vivaldi_future:
-        source: "https://gist.githubusercontent.com/morawskim/34a411a7e10c73ae79d89c00b2b644bb/raw/c198f2b4b130cb574665d3eae16cf1cde4d6e6b9/vivaldi_future_gpg.pub"
-        name: '7B8B44A1'
-    X11_Utilities:
-        source: "http://download.opensuse.org/repositories/X11:/Utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: '0F2672C8'
-    morawskim:
-        source: 'https://gist.githubusercontent.com/morawskim/1f98a9e766e447285751fdea5d9f91a4/raw/ca313769505211384ed6029e81c57427687e1add/RPM-GPG-KEY-morawskim'
-        name: '2FB7B3CB'
+mopensuse::rpmkeys::benchmark:
+    source: "http://download.opensuse.org/repositories/benchmark/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '9F1AEE68'
+    ensure: 'present'
+mopensuse::rpmkeys::devel_libraries_c_cpp:
+    source: "http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '09CA02B0'
+    ensure: 'present'
+mopensuse::rpmkeys::devel_languages_go:
+    source: "http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '307D7BF9'
+    ensure: 'present'
+mopensuse::rpmkeys::devel_languages_python3:
+    source: "http://download.opensuse.org/repositories/devel:/languages:/python3/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '628F16E3'
+    ensure: 'present'
+mopensuse::rpmkeys::devel_languages_python:
+    source: "http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: 'EDF0D733'
+    ensure: 'present'
+mopensuse::rpmkeys::devel_tools:
+    source: "http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '498D5A23'
+    ensure: 'present'
+mopensuse::rpmkeys::education:
+    source: "http://download.opensuse.org/repositories/Education/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: 'C0951497'
+    ensure: 'present'
+mopensuse::rpmkeys::filesystems:
+    source: "http://download.opensuse.org/repositories/filesystems/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '324E6311'
+    ensure: 'present'
+mopensuse::rpmkeys::games_tools:
+    source: "http://download.opensuse.org/repositories/games:/tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '58DDEB32'
+    ensure: 'present'
+mopensuse::rpmkeys::google_chrome:
+    source: 'https://dl.google.com/linux/linux_signing_key.pub'
+    name: '7FAC5991'
+    ensure: 'present'
+mopensuse::rpmkeys::hardware:
+    source: "http://download.opensuse.org/repositories/hardware/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: 'D6D11CE4'
+    ensure: 'present'
+mopensuse::rpmkeys::isv_owncloud_desktop:
+    source: "http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '557BEFF9'
+    ensure: 'present'
+mopensuse::rpmkeys::jenkins:
+    source: 'http://pkg.jenkins-ci.org/opensuse/repodata/repomd.xml.key'
+    name: 'D50582E6'
+    ensure: 'present'
+mopensuse::rpmkeys::kde_extra:
+    source: "http://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '0D210A40'
+    ensure: 'present'
+mopensuse::rpmkeys::kde_frameworks5:
+    source: "http://download.opensuse.org/repositories/KDE:/Frameworks5/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '6F88BB2F'
+    ensure: 'present'
+mopensuse::rpmkeys::kde_kup:
+    source: "http://download.opensuse.org/repositories/home:/simper:/kup/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '82CEBF3D'
+    ensure: 'present'
+mopensuse::rpmkeys::libdvdcss:
+    source: "http://opensuse-guide.org/repo/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '6867F5BE'
+    ensure: 'present'
+mopensuse::rpmkeys::multimedia_apps:
+    source: "http://download.opensuse.org/repositories/multimedia:/apps/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: 'E95B46D4'
+    ensure: 'present'
+mopensuse::rpmkeys::network:
+    source: "http://download.opensuse.org/repositories/network/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '17280DDF'
+    ensure: 'present'
+mopensuse::rpmkeys::network_utilities:
+    source: "http://download.opensuse.org/repositories/network:utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '392FFA88'
+    ensure: 'present'
+mopensuse::rpmkeys::packman:
+    source: "http://packman.inode.at/suse/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '1ABD1AFB'
+    ensure: 'present'
+mopensuse::rpmkeys::devel_languages_ruby_extensions:
+    source: "http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '0E9AF123'
+    ensure: 'present'
+mopensuse::rpmkeys::security:
+    source: "http://download.opensuse.org/repositories/security/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: 'EE3D166A'
+    ensure: 'present'
+mopensuse::rpmkeys::security_privacy:
+    source: "http://download.opensuse.org/repositories/security:/privacy/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: 'E3DBD3CD'
+    ensure: 'present'
+mopensuse::rpmkeys::server_database:
+    source: "http://download.opensuse.org/repositories/server:/database/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '05905EA8'
+    ensure: 'present'
+mopensuse::rpmkeys::server_mail:
+    source: "http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '367FE7FC'
+    ensure: 'present'
+mopensuse::rpmkeys::server_monitoring:
+    source: "http://download.opensuse.org/repositories/server:/monitoring/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: 'EE454F98'
+    ensure: 'present'
+mopensuse::rpmkeys::server_php_extensions:
+    source: "http://download.opensuse.org/repositories/server:/php:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '1AF1B065'
+    ensure: 'present'
+mopensuse::rpmkeys::skype:
+    source: "https://repo.skype.com/data/SKYPE-GPG-KEY"
+    name: 'DF7587C3'
+    ensure: 'present'
+mopensuse::rpmkeys::slack:
+    source: "https://gist.githubusercontent.com/morawskim/e417ad8c063ee32c5791777935c588eb/raw/948787b82ed6e98ac382fecf003d719f0f0c23c2/slack_gpg.pub"
+    name: '038651BD'
+    ensure: 'present'
+mopensuse::rpmkeys::slack_repo:
+    source: "https://packagecloud.io/gpg.key"
+    name: 'D59097AB'
+    ensure: 'present'
+mopensuse::rpmkeys::systemsmanagement_machinery:
+    source: "http://download.opensuse.org/repositories/systemsmanagement:/machinery/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: 'A0E46E11'
+    ensure: 'present'
+mopensuse::rpmkeys::utilities:
+    source: "http://download.opensuse.org/repositories/utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '9056621D'
+    ensure: 'present'
+mopensuse::rpmkeys::virtualization_containers:
+    source: "http://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '72174FC2'
+    ensure: 'present'
+mopensuse::rpmkeys::vivaldi:
+    source: "https://gist.githubusercontent.com/morawskim/dcee4dd70958c4e9ede389c45f7f8d5f/raw/c47323f1cd395b5c79d0fc23cd2bdb19b6b302df/vivaldi_gpg.pub"
+    name: 'BF1700F8'
+    ensure: 'present'
+mopensuse::rpmkeys::vivaldi_future:
+    source: "https://gist.githubusercontent.com/morawskim/34a411a7e10c73ae79d89c00b2b644bb/raw/c198f2b4b130cb574665d3eae16cf1cde4d6e6b9/vivaldi_future_gpg.pub"
+    name: '7B8B44A1'
+    ensure: 'present'
+mopensuse::rpmkeys::x11_utilities:
+    source: "http://download.opensuse.org/repositories/X11:/Utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '0F2672C8'
+    ensure: 'present'
+mopensuse::rpmkeys::morawskim:
+    source: 'https://gist.githubusercontent.com/morawskim/1f98a9e766e447285751fdea5d9f91a4/raw/ca313769505211384ed6029e81c57427687e1add/RPM-GPG-KEY-morawskim'
+    name: '2FB7B3CB'
+    ensure: 'present'
