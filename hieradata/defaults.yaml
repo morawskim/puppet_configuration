@@ -198,6 +198,13 @@ mprojects::drupal::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
 mprojects::apache::drupal::project_domain: 'drupal.dev'
 mprojects::apache::drupal::vhost_document_root: '/home/marcin/projekty/drupal/drupal.dev/'
 
+mprojects::pan_toh::vscrepo_source: 'git@gl.booksy.net:pan/TempleOfHatshepsut.git'
+mprojects::pan_toh::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::apache::pan_toh::project_domain: 'toh.test'
+mprojects::apache::pan_toh::vhost_document_root: '/home/marcin/projekty/pan/toh.test/frontend/web/'
+mprojects::apache::pan_media_toh::project_domain: 'media.toh.test'
+mprojects::apache::pan_media_toh::vhost_document_root: '/home/marcin/projekty/pan/toh.test/media/'
+
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
 
