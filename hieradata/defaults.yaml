@@ -205,6 +205,9 @@ mprojects::apache::pan_toh::vhost_document_root: '/home/marcin/projekty/pan/toh.
 mprojects::apache::pan_media_toh::project_domain: 'media.toh.test'
 mprojects::apache::pan_media_toh::vhost_document_root: '/home/marcin/projekty/pan/toh.test/media/'
 
+mprojects::tumska::vscrepo_source: 'git@gl.booksy.net:ars/TumskaNova.git'
+mprojects::tumska::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+
 mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
 
