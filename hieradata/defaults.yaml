@@ -299,7 +299,7 @@ mopensuse::rpmkeys::libdvdcss:
     ensure: 'present'
 mopensuse::rpmkeys::multimedia_apps:
     source: "http://download.opensuse.org/repositories/multimedia:/apps/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-    name: 'E95B46D4'
+    name: 'F23C6AA3'
     ensure: 'present'
 mopensuse::rpmkeys::network:
     source: "http://download.opensuse.org/repositories/network/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
