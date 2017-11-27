@@ -90,6 +90,11 @@ node default {
      target  => "${user_home_path}/.local/share/feeds.opml",
    }
 
+   mopensuse::user::config::baloofilerc{$username:
+    baloofilerc_path => "${user_home_path}/.config/baloofilerc",
+    exclude_folders  => '$HOME/projekty/,$HOME/public_html/,$HOME/VirtualBox VMs/',
+  }
+
    # We can use syntax git_daemon_paths.morawskim.path only in hiera 2
    # Currently we have only hiera 1.3.4
    $git_daemon_paths = hiera('git_daemon_paths')
