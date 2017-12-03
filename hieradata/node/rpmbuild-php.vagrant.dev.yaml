@@ -1,2 +1,3 @@
 ---
 morawskim_repository_url: 'git://10.0.2.2/morawskim/rpmbuild.git'
+mopensuse::zypper::repositories::morawskim::url: 'http://10.0.2.2:5656/'
