@@ -5,7 +5,6 @@ node default {
     include mopensuse::packages::rpmbuild
     include mopensuse::packages::vcs
     include mopensuse::zypper::repositories::devel_languages_python
-    include mopensuse::zypper::repositories::devel_languages_python3
 
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
@@ -17,7 +16,7 @@ node default {
     
     package {['python3-base', 'python3-setuptools', 'python3-devel']:
         ensure  => present,
-        require => Class['mopensuse::zypper::repositories::devel_languages_python3']
+        require => Class['mopensuse::zypper::repositories::devel_languages_python']
     }
 
     vcsrepo { $rpmbuild_top:

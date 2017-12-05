@@ -241,10 +241,6 @@ mopensuse::rpmkeys::devel_languages_go:
     source: "http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: '307D7BF9'
     ensure: 'present'
-mopensuse::rpmkeys::devel_languages_python3:
-    source: "http://download.opensuse.org/repositories/devel:/languages:/python3/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-    name: '628F16E3'
-    ensure: 'present'
 mopensuse::rpmkeys::devel_languages_python:
     source: "http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: 'EDF0D733'
@@ -434,15 +430,6 @@ mopensuse::zypper::repositories::devel_languages_python:
     enabled    : '1'
     gpgcheck   : '1'
     gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
-    type       : 'rpm-md'
-
-mopensuse::zypper::repositories::devel_languages_python3:
-    autorefresh: '1'
-    baseurl    : 'http://download.opensuse.org/repositories/devel:/languages:/python3/openSUSE_Leap_%{::operatingsystemrelease}/'
-    descr      : 'Python-3 modules (openSUSE_Leap_%{::operatingsystemrelease})'
-    enabled    : '1'
-    gpgcheck   : '1'
-    gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/python3/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
     type       : 'rpm-md'
 
 mopensuse::zypper::repositories::devel_languages_ruby_extensions:
