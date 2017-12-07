@@ -205,6 +205,13 @@ mprojects::apache::pan_toh::vhost_document_root: '/home/marcin/projekty/pan/toh.
 mprojects::apache::pan_media_toh::project_domain: 'media.toh.test'
 mprojects::apache::pan_media_toh::vhost_document_root: '/home/marcin/projekty/pan/toh.test/media/'
 
+mprojects::bacca::vscrepo_source: 'git@gl.booksy.net:bacca/app.git'
+mprojects::bacca::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
+mprojects::apache::bacca_front::project_domain: 'bacca.test'
+mprojects::apache::bacca_front::vhost_document_root: '/home/marcin/projekty/bacca/bacca.test/frontend/web/'
+mprojects::apache::bacca_api::project_domain: 'api.bacca.test'
+mprojects::apache::bacca_api::vhost_document_root: '/home/marcin/projekty/bacca/bacca.test/api/web/'
+
 mprojects::tumska::vscrepo_source: 'git@gl.booksy.net:ars/TumskaNova.git'
 mprojects::tumska::vscrepo_identity: '/home/marcin/.ssh/work_rsa'
 
