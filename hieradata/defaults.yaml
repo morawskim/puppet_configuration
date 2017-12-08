@@ -670,11 +670,11 @@ mopensuse::zypper::repositories::security_privacy:
 
 mopensuse::zypper::repositories::security_tools:
     autorefresh: '1'
-    baseurl    : 'http://download.opensuse.org/repositories/security:tools/openSUSE_Leap_%{::operatingsystemrelease}/'
+    baseurl    : 'http://download.opensuse.org/repositories/security:/tools/openSUSE_Leap_%{::operatingsystemrelease}/'
     descr      : 'Security tools for auditing and scanning (openSUSE_Leap_%{::operatingsystemrelease})'
     enabled    : '1'
     gpgcheck   : '1'
-    gpgkey     : 'http://download.opensuse.org/repositories/security:tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    gpgkey     : 'http://download.opensuse.org/repositories/security:/tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
     type       : 'rpm-md'
 
 mopensuse::zypper::repositories::server_database:
