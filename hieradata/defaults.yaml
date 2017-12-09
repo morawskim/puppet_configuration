@@ -716,7 +716,7 @@ mopensuse::zypper::repositories::server_php_extensions:
 mopensuse::zypper::repositories::skype_stable:
     autorefresh : '1'
     baseurl     : 'https://repo.skype.com/rpm/stable/'
-    descr       : 'skype (stable)'
+    descr       : 'Skypeforlinux - stable'
     enabled     : '1'
     keeppackages: '0'
     type        : 'rpm-md'
