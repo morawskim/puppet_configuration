@@ -380,6 +380,10 @@ mopensuse::rpmkeys::x11_utilities:
     source: "http://download.opensuse.org/repositories/X11:/Utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: '0F2672C8'
     ensure: 'present'
+mopensuse::rpmkeys::yarn:
+    source: 'https://dl.yarnpkg.com/rpm/pubkey.gpg'
+    name: '6963F07F'
+    ensure: 'present'
 mopensuse::rpmkeys::morawskim:
     source: 'https://gist.githubusercontent.com/morawskim/1f98a9e766e447285751fdea5d9f91a4/raw/ca313769505211384ed6029e81c57427687e1add/RPM-GPG-KEY-morawskim'
     name: '2FB7B3CB'
@@ -768,3 +772,12 @@ mopensuse::zypper::repositories::vivaldi:
     keeppackages: '0'
     type        : 'rpm-md'
 
+mopensuse::zypper::repositories::yarn:
+    autorefresh : '1'
+    baseurl     : 'https://dl.yarnpkg.com/rpm/'
+    descr       : 'Yarn'
+    enabled     : '1'
+    gpgcheck    : '1'
+    gpgkey      : 'https://dl.yarnpkg.com/rpm/pubkey.gpg'
+    keeppackages: '0'
+    type        : 'rpm-md'
