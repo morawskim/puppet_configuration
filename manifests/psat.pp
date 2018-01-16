@@ -90,6 +90,7 @@ node default {
   include mopensuse::packages::gui::recordmydesktop
   include mopensuse::packages::gui::redshift
   include mopensuse::packages::gui::retext
+  include mopensuse::packages::gui::sddm
   include mopensuse::packages::gui::skypeforlinux
   include mopensuse::packages::gui::soapui
   include mopensuse::packages::gui::telegram
