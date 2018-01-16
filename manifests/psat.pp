@@ -5,6 +5,7 @@ node default {
   include mopensuse::packages::augeas
   include mopensuse::packages::bash
   include mopensuse::packages::bsdtar
+  include mopensuse::packages::bundler
   include mopensuse::packages::ca_certificates
   include mopensuse::packages::colordiff
   include mopensuse::packages::colout
