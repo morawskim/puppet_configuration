@@ -23,6 +23,7 @@ node default {
   include mopensuse::packages::fzf_tmux
   include mopensuse::packages::fzf
   include mopensuse::packages::git_extras
+  include mopensuse::packages::git_hooks
   include mopensuse::packages::httpry
   include mopensuse::packages::jq
   include mopensuse::packages::json_tools
