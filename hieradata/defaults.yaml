@@ -320,6 +320,10 @@ mopensuse::rpmkeys::devel_languages_ruby_extensions:
     source: "http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: '0E9AF123'
     ensure: 'present'
+mopensuse::rpmkeys::devel_languages_rust:
+    source: "http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '89AEF584'
+    ensure: 'present'
 mopensuse::rpmkeys::security:
     source: "http://download.opensuse.org/repositories/security/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: 'EE3D166A'
@@ -450,6 +454,15 @@ mopensuse::zypper::repositories::devel_languages_ruby_extensions:
     enabled    : '1'
     gpgcheck   : '1'
     gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::devel_languages_rust:
+    autorefresh: '0'
+    baseurl    : 'http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'Rust (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
     type       : 'rpm-md'
 
 mopensuse::zypper::repositories::devel_tools:
