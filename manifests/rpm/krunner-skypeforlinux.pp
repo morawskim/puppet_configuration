@@ -2,7 +2,6 @@ node default {
 
     include mopensuse::zypper::refresh
     include mopensuse::zypper::repositories::devel_tools
-    include mopensuse::zypper::repositories::morawskim
     include mopensuse::packages::rpmbuild
     include mopensuse::packages::vcs
     include mopensuse::packages::patterns_devel_c_cpp
