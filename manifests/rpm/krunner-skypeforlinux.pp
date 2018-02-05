@@ -5,12 +5,13 @@ node default {
     include mopensuse::zypper::repositories::morawskim
     include mopensuse::packages::rpmbuild
     include mopensuse::packages::vcs
+    include mopensuse::packages::patterns_devel_c_cpp
     include mopensuse::user::rpm
 
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
-    package { ['extra-cmake-modules', 'cmake', 'gcc-c++', 'patterns-openSUSE-devel_C_C++']:
+    package { ['extra-cmake-modules', 'cmake', 'gcc-c++']:
       ensure => present
     }
 
