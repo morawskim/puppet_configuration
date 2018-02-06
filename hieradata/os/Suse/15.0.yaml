@@ -1,0 +1,8 @@
+---
+mopensuse::zypper::repositories::devel_languages_ruby_extensions:
+    baseurl: "http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_%{::operatingsystemrelease}/"
+mopensuse::rpmkeys::devel_languages_ruby_extensions:
+    source: "http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+mopensuse::packages::rubygem_ronn::package_name: 'ruby2.5-rubygem-ronn'
+mopensuse::packages::patterns_base::package_name: 'patterns-base-basesystem'
+mopensuse::packages::patterns_devel_rpm_build::package_name: 'patterns-devel-base-devel_rpm_build'

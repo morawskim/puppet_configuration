@@ -1,0 +1,7 @@
+---
+mopensuse::packages::ungifsicle::ensure: 'absent'
+mopensuse::packages::kiwi_config_opensuse::ensure: 'absent'
+mopensuse::zypper::repositories::security_tools::enabled: 0
+mopensuse::packages::rubygem_ronn::package_name: 'ruby2.1-rubygem-ronn'
+mopensuse::packages::patterns_base::package_name: 'patterns-openSUSE-base'
+mopensuse::packages::patterns_devel_rpm_build::package_name: 'patterns-openSUSE-devel_rpm_build'
