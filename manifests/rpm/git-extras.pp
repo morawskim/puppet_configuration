@@ -1,17 +1,16 @@
 node default {
 
     include mopensuse::zypper::refresh
-    include mopensuse::zypper::repositories::ruby_extensions
     include mopensuse::user::rpm
     include mopensuse::packages::rpmbuild
+    include mopensuse::packages::rubygem_ronn
 
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
 
-    package {['ruby2.1-rubygem-ronn', 'git']:
+    package {['git']:
         ensure  => present,
-        require => Class['mopensuse::zypper::repositories::ruby_extensions']
     }
 
     vcsrepo { $rpmbuild_top:
