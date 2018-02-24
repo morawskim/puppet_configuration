@@ -316,6 +316,10 @@ mopensuse::rpmkeys::packman:
     source: "http://packman.inode.at/suse/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: '1ABD1AFB'
     ensure: 'present'
+mopensuse::rpmkeys::puppet:
+    source: "http://yum.puppetlabs.com/puppet5/sles/%{::operatingsystemmajrelease}/%{::architecture}/repodata/repomd.xml.key"
+    name: 'EF8D349F'
+    ensure: 'present'
 mopensuse::rpmkeys::devel_languages_ruby_extensions:
     source: "http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: '0E9AF123'
@@ -612,6 +616,14 @@ mopensuse::zypper::repositories::packman:
     gpgcheck   : '1'
     gpgkey     : 'http://packman.inode.at/suse/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
     type       : 'rpm-md'
+
+mopensuse::zypper::repositories::puppet:
+    autorefresh: '1'
+    baseurl    : 'http://yum.puppetlabs.com/puppet5/sles/%{::operatingsystemmajrelease}/$basearch'
+    descr      : 'Puppet 5 Repository (sles %{::operatingsystemmajrelease}) - $basearch'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://yum.puppetlabs.com/puppet5/sles/%{::operatingsystemmajrelease}/%{::architecture}/repodata/repomd.xml.key'
 
 mopensuse::zypper::repositories::repo_debug:
     autorefresh : '1'
