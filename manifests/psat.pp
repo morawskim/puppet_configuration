@@ -12,6 +12,7 @@ node default {
   include mopensuse::packages::composer
   include mopensuse::packages::ctags
   include mopensuse::packages::dateutils
+  include mopensuse::packages::devel_java
   include mopensuse::packages::dhcpd
   include mopensuse::packages::dnsmasq
   include mopensuse::packages::enhancd
