@@ -30,6 +30,7 @@ node default {
   include mopensuse::packages::json_tools
   include mopensuse::packages::libguestfs
   include mopensuse::packages::mailutil
+  include mopensuse::packages::maven
   include mopensuse::packages::mc
   include mopensuse::packages::monoid
   include mopensuse::packages::msmtp
