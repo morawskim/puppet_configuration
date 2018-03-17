@@ -264,6 +264,10 @@ mopensuse::rpmkeys::filesystems:
     source: "http://download.opensuse.org/repositories/filesystems/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: '324E6311'
     ensure: 'present'
+mopensuse::rpmkeys::games:
+    source: "http://download.opensuse.org/repositories/games/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: 'C862B42C'
+    ensure: 'present'
 mopensuse::rpmkeys::games_tools:
     source: "http://download.opensuse.org/repositories/games:/tools/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: '58DDEB32'
@@ -503,6 +507,15 @@ mopensuse::zypper::repositories::filesystems:
     enabled    : '1'
     gpgcheck   : '1'
     gpgkey     : 'http://download.opensuse.org/repositories/filesystems/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::games:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/games/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : 'openSUSE Games (openSUSE_Leap_%{::operatingsystemrelease})'
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/games/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
     type       : 'rpm-md'
 
 mopensuse::zypper::repositories::games_tools:
