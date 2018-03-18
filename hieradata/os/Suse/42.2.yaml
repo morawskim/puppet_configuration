@@ -1,3 +1,5 @@
 ---
 mopensuse::packages::ungifsicle::ensure: 'absent'
 mopensuse::packages::kiwi_config_opensuse::ensure: 'absent'
+mopensuse::zypper::repositories::obs_morawskim:
+    enabled: '0'

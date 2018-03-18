@@ -316,6 +316,10 @@ mopensuse::rpmkeys::network_utilities:
     source: "http://download.opensuse.org/repositories/network:utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: '392FFA88'
     ensure: 'present'
+mopensuse::rpmkeys::obs_morawskim:
+    source: "http://download.opensuse.org/repositories/home:/morawskim/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+    name: '4329DD75'
+    ensure: 'present'
 mopensuse::rpmkeys::packman:
     source: "http://packman.inode.at/suse/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
     name: '1ABD1AFB'
@@ -619,6 +623,15 @@ mopensuse::zypper::repositories::network_utilities:
     enabled    : '1'
     gpgcheck   : '1'
     gpgkey     : 'http://download.opensuse.org/repositories/network:utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+    type       : 'rpm-md'
+
+mopensuse::zypper::repositories::obs_morawskim:
+    autorefresh: '1'
+    baseurl    : 'http://download.opensuse.org/repositories/home:/morawskim/openSUSE_Leap_%{::operatingsystemrelease}/'
+    descr      : "morawskim's Home Project (openSUSE_Leap_%{::operatingsystemrelease})"
+    enabled    : '1'
+    gpgcheck   : '1'
+    gpgkey     : 'http://download.opensuse.org/repositories/home:/morawskim/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
     type       : 'rpm-md'
 
 mopensuse::zypper::repositories::packman:
