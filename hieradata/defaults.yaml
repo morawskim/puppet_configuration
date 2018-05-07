@@ -226,6 +226,14 @@ git_daemon_paths:
         group: 'nogroup'
         mode: '0750'
 
+mopensuse::config::apache2::custom::files:
+    mmo:
+        path: '/etc/apache2/conf.d/mmo.conf'
+        source: 'puppet:///configuration/apache2/mmo.conf'
+        owner: 'marcin'
+        group: 'root'
+        mode: '0644'
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
