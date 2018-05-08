@@ -234,6 +234,14 @@ mopensuse::config::apache2::custom::files:
         group: 'root'
         mode: '0644'
 
+mopensuse::config::vagrant::files:
+    sudoers:
+        path: '/etc/sudoers.d/vagrant'
+        source: 'puppet:///configuration/sudo/vagrant'
+        owner: 'root'
+        group: 'root'
+        mode: '0600'
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
