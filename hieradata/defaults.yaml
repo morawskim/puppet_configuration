@@ -242,6 +242,14 @@ mopensuse::config::vagrant::files:
         group: 'root'
         mode: '0600'
 
+mopensuse::config::osc::files:
+    sudoers:
+        path: '/etc/sudoers.d/osc'
+        source: 'puppet:///configuration/sudo/osc'
+        owner: 'root'
+        group: 'root'
+        mode: '0600'
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
