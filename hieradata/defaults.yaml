@@ -224,7 +224,7 @@ git_daemon_paths:
         path: '/srv/git/morawskim'
         owner: 'marcin'
         group: 'nogroup'
-        mode: '0750'
+        mode: '0755'
 
 mopensuse::config::apache2::custom::files:
     mmo:
