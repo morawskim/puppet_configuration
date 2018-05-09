@@ -250,6 +250,23 @@ mopensuse::config::osc::files:
         group: 'root'
         mode: '0600'
 
+mopensuse::config::cgit::cgit_host: 'cgit.test'
+mopensuse::config::cgit::cgit_host_aliases:
+        - 'www.cgit.test'
+mopensuse::config::cgit::files:
+    vhost:
+        path: '/etc/apache2/vhosts.d/cgit.test.conf'
+        source: 'puppet:///configuration/apache2/cgit.test.conf'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+    cgitrc:
+        path: '/etc/cgitrc'
+        source: 'puppet:///configuration/cgit/cgitrc'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
