@@ -258,6 +258,14 @@ mopensuse::config::steam::files:
         group: 'root'
         mode: '0644'
 
+mopensuse::config::sysctl::files:
+    inotify:
+        path: '/etc/sysctl.d/60-inotify.conf'
+        source: 'puppet:///configuration/sysctl/inotify'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
 mopensuse::config::cgit::cgit_host: 'cgit.test'
 mopensuse::config::cgit::cgit_host_aliases:
         - 'www.cgit.test'
