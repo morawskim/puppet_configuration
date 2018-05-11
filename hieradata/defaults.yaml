@@ -250,6 +250,14 @@ mopensuse::config::osc::files:
         group: 'root'
         mode: '0600'
 
+mopensuse::config::steam::files:
+    firewall:
+        path: '/etc/sysconfig/SuSEfirewall2.d/services/steam-streaming'
+        source: 'puppet:///configuration/SuSEFirewall/steam-streaming'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
 mopensuse::config::cgit::cgit_host: 'cgit.test'
 mopensuse::config::cgit::cgit_host_aliases:
         - 'www.cgit.test'
