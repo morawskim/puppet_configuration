@@ -266,6 +266,20 @@ mopensuse::config::sysctl::files:
         group: 'root'
         mode: '0644'
 
+mopensuse::config::php::files:
+    customini:
+        path: '/etc/php5/conf.d/99-custom.ini'
+        source: 'puppet:///configuration/php/custom.ini'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+    phpinfo:
+        path: '/srv/www/htdocs/phpinfo.php'
+        source: 'puppet:///configuration/php/phpinfo.php'
+        owner: 'wwwrun'
+        group: 'www'
+        mode: '0644'
+
 mopensuse::config::cgit::cgit_host: 'cgit.test'
 mopensuse::config::cgit::cgit_host_aliases:
         - 'www.cgit.test'
