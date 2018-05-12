@@ -280,6 +280,14 @@ mopensuse::config::php::files:
         group: 'www'
         mode: '0644'
 
+mopensuse::config::dnsmasq::files:
+    apparmor:
+        path: '/etc/apparmor.d/local/usr.sbin.dnsmasq'
+        source: 'puppet:///configuration/apparmor/usr.sbin.dnsmasq'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
 mopensuse::config::cgit::cgit_host: 'cgit.test'
 mopensuse::config::cgit::cgit_host_aliases:
         - 'www.cgit.test'
