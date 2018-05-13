@@ -233,6 +233,24 @@ mopensuse::config::apache2::custom::files:
         owner: 'marcin'
         group: 'root'
         mode: '0644'
+    vhost_fpm_template:
+        path: '/etc/apache2/vhosts.d/vhost-fpm.template'
+        source: 'puppet:///configuration/apache2/vhosts.d/vhost-fpm.template'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+    vhost_fpm_ssl_template:
+        path: '/etc/apache2/vhosts.d/vhost-fpm-ssl.template'
+        source: 'puppet:///configuration/apache2/vhosts.d/vhost-fpm-ssl.template'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+    vhost_default:
+        path: '/etc/apache2/vhosts.d/000-default.conf'
+        source: 'puppet:///configuration/apache2/vhosts.d/000-default.conf'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
 
 mopensuse::config::vagrant::files:
     sudoers:
