@@ -284,6 +284,12 @@ mopensuse::config::sysctl::files:
         owner: 'root'
         group: 'root'
         mode: '0644'
+    iptables:
+        path: '/etc/sysctl.d/40-ipforward.conf'
+        source: 'puppet:///configuration/sysctl/ipforward'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
 
 mopensuse::config::php::files:
     customini:
