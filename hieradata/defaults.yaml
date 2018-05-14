@@ -219,7 +219,8 @@ mysql::server::package_manage: false
 mysql::client::package_name: 'mariadb-tools'
 
 wget::manage_package: false
-git_daemon_paths:
+
+mopensuse::config::git_server::dirs:
     morawskim:
         path: '/srv/git/morawskim'
         owner: 'marcin'
