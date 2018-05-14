@@ -313,6 +313,18 @@ mopensuse::config::dnsmasq::files:
         group: 'root'
         mode: '0644'
 
+mopensuse::config::nfs_server::exports:
+    marcin:
+        path: '/srv/nfs/marcin'
+        owner: 'marcin'
+        group: 'users'
+        mode: '0755'
+    public:
+        path: '/srv/nfs/public'
+        owner: 'root'
+        group: 'users'
+        mode: '1775'
+
 mopensuse::config::cgit::cgit_host: 'cgit.test'
 mopensuse::config::cgit::cgit_host_aliases:
         - 'www.cgit.test'
