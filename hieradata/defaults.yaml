@@ -342,6 +342,14 @@ mopensuse::config::cgit::files:
         group: 'root'
         mode: '0644'
 
+mopensuse::config::mysql::files:
+    query_log:
+        path: '/etc/my.cnf.d/log_query.cnf'
+        source: 'puppet:///configuration/mysql/log_query.cnf'
+        owner: 'root'
+        group: 'mysql'
+        mode: '0640'
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
