@@ -358,6 +358,14 @@ mopensuse::config::php53v::files:
         group: 'root'
         mode: '0644'
 
+mopensuse::config::php54v::files:
+    customini54v:
+        path: '/opt/php/php54v/etc/php5/conf.d/custom.ini'
+        source: 'puppet:///configuration/php/custom.ini'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
