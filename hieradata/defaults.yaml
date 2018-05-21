@@ -382,6 +382,14 @@ mopensuse::config::php56v::files:
         group: 'root'
         mode: '0644'
 
+mopensuse::config::php70v::files:
+    customini70v:
+        path: '/opt/php/php70v/etc/php7/conf.d/custom.ini'
+        source: 'puppet:///configuration/php/custom.ini'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
