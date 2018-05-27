@@ -427,6 +427,35 @@ mopensuse::config::phpmyadmin::phpmyadmin_servernode:
         user: ''
         myserver_port: 3308
 
+mopensuse::config::phpmyadmin40::phpmyadmin_host: 'phpmyadmin40.test'
+mopensuse::config::phpmyadmin40::files:
+    phpmyadminvhost40:
+        path: '/etc/apache2/vhosts.d/phpmyadmin40.test.conf'
+        source: 'puppet:///configuration/apache2/vhosts.d/phpmyadmin40.test.conf'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
+mopensuse::config::phpmyadmin40::phpmyadmin_servernode:
+    phpmyadmin40localhost3306:
+        myserver_name: '127.0.0.1'
+        verbose_name: 'localhost 3306'
+        server_group: 'default'
+        user: ''
+        myserver_port: 3306
+    phpmyadmin40localhost3307:
+        myserver_name: '127.0.0.1'
+        verbose_name: 'localhost 3307'
+        server_group: 'default'
+        user: ''
+        myserver_port: 3307
+    phpmyadmin40localhost3308:
+        myserver_name: '127.0.0.1'
+        verbose_name: 'localhost 3308'
+        server_group: 'default'
+        user: ''
+        myserver_port: 3308
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
