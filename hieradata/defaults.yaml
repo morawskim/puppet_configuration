@@ -398,6 +398,35 @@ mopensuse::config::php71v::files:
         group: 'root'
         mode: '0644'
 
+mopensuse::config::phpmyadmin::phpmyadmin_host: 'phpmyadmin.test'
+mopensuse::config::phpmyadmin::files:
+    vhost:
+        path: '/etc/apache2/vhosts.d/phpmyadmin.test.conf'
+        source: 'puppet:///configuration/apache2/vhosts.d/phpmyadmin.test.conf'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
+mopensuse::config::phpmyadmin::phpmyadmin_servernode:
+    localhost3306:
+        myserver_name: '127.0.0.1'
+        verbose_name: 'localhost 3306'
+        server_group: 'default'
+        user: ''
+        myserver_port: 3306
+    localhost3307:
+        myserver_name: '127.0.0.1'
+        verbose_name: 'localhost 3307'
+        server_group: 'default'
+        user: ''
+        myserver_port: 3307
+    localhost3308:
+        myserver_name: '127.0.0.1'
+        verbose_name: 'localhost 3308'
+        server_group: 'default'
+        user: ''
+        myserver_port: 3308
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
