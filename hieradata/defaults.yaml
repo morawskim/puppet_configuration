@@ -400,8 +400,7 @@ mopensuse::config::php71v::files:
 
 mopensuse::config::phpmyadmin::phpmyadmin_host: 'phpmyadmin.test'
 mopensuse::config::phpmyadmin::files:
-    vhost:
-        path: '/etc/apache2/vhosts.d/phpmyadmin.test.conf'
+    /etc/apache2/vhosts.d/phpmyadmin.test.conf:
         source: 'puppet:///configuration/apache2/vhosts.d/phpmyadmin.test.conf'
         owner: 'root'
         group: 'root'
