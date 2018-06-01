@@ -3,7 +3,7 @@ node default {
     include mopensuse::zypper::refresh
     include mopensuse::zypper::repositories::devel_tools
     include mopensuse::zypper::repositories::morawskim
-    include mopensuse::zypper::repositories::server_monitoring
+    include mopensuse::zypper::repositories::obs_morawskim
     include mopensuse::user::rpm
     include mopensuse::packages::rpmbuild
 
@@ -18,7 +18,7 @@ node default {
 
     package {['gearmand-devel']:
         ensure  => present,
-        require => Class['mopensuse::zypper::repositories::server_monitoring']
+        require => Class['mopensuse::zypper::repositories::obs_morawskim']
     }
 
     vcsrepo { $rpmbuild_top:

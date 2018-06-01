@@ -4,7 +4,6 @@ node default {
     include mopensuse::user::rpm
     include mopensuse::packages::rpmbuild
     include mopensuse::packages::vcs
-    include mopensuse::packages::devel_c_cpp
 
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
@@ -12,11 +11,6 @@ node default {
 
     package {['go']:
         ensure  => present
-    }
-
-    package { ['ncurses-devel']:
-      ensure  => present,
-      require => Class['mopensuse::packages::devel_c_cpp']
     }
 
     vcsrepo { $rpmbuild_top:

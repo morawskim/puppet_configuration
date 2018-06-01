@@ -9,7 +9,7 @@ node default {
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
-    package {['rust', 'cargo']:
+    package {['rust', 'cargo', 'rust-std']:
         ensure  => present,
         require => Class['mopensuse::zypper::repositories::devel_languages_rust']
     }

@@ -24,5 +24,4 @@ node default {
         group    => 'users',
         require => [ Class['mopensuse::user::rpm'], Package['git'] ]
     }
-    
 }

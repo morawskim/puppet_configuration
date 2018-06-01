@@ -4,14 +4,12 @@ node default {
     include mopensuse::user::rpm
     include mopensuse::packages::rpmbuild
     include mopensuse::packages::vcs
-    include mopensuse::zypper::repositories::devel_languages_go
 
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
     package {['go1.7', 'golang-packaging']:
         ensure  => present,
-        require => Class['mopensuse::zypper::repositories::devel_languages_go']
     }
 
     vcsrepo { $rpmbuild_top:

@@ -9,7 +9,7 @@ node default {
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
 
-    package {['python-base', 'python-setuptools']:
+    package {['python2-setuptools']:
         ensure  => present
     }
 

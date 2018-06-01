@@ -19,7 +19,7 @@ node default {
         require => [ Class['mopensuse::user::rpm'], Package['git'] ]
     }
 
-    package { ['ant', 'java-1_7_0-openjdk-devel']:
+    package { ['ant', 'java-1_8_0-openjdk-devel']:
         ensure => present
     }
 

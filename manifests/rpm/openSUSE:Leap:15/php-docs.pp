@@ -8,7 +8,7 @@ node default {
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
-    package {['php5', 'php5-zlib']:
+    package {['php7', 'php7-zlib', 'php7-dom', 'php7-xmlreader', 'php7-sqlite', 'php7-json']:
         ensure => 'present'
     }
 

@@ -8,6 +8,9 @@ node default {
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
+    package {['php5', 'php5-zlib']:
+        ensure => 'present'
+    }
 
     vcsrepo { $rpmbuild_top:
         ensure   => present,
@@ -16,7 +19,6 @@ node default {
         revision => "openSUSE_${::operatingsystemrelease}",
         owner    => 'rpm',
         group    => 'users',
-        require => [ Class['mopensuse::user::rpm'], Package['git'] ]
+        require => [ Class['mopensuse::user::rpm'], Class['mopensuse::packages::vcs'] ]
     }
-
 }

@@ -10,8 +10,8 @@ node default {
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
 
-    package {['python-devel', 'python-fuse', 'python-xattr',
-      'python-pylibacl', 'python-tornado', 'git-core', 'pandoc']:
+    package {['python-devel', 'python-fuse', 'python2-xattr',
+      'python-pylibacl', 'python2-tornado', 'git-core', 'pandoc']:
         ensure  => present,
         require => Class['mopensuse::zypper::repositories::devel_languages_python']
     }

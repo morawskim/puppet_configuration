@@ -16,12 +16,12 @@ node default {
 
     #libpng12-compat-devel vs libpng16-compat-devel
     package {['aspell-devel', 'autoconf', 'bison', 'curl', 'libcurl-devel',
-        'cyrus-sasl-devel', 'libdb-4_8-devel', 'enchant-devel', 'firebird-devel',
+        'cyrus-sasl-devel', 'libdb-4_8-devel', 'enchant-devel',
         'freetds-devel', 'freetype2-devel', 'gcc-c++', 'gd-devel', 'gmp-devel',
         'imap-devel', 'krb5-devel', 'libapparmor-devel', 'libbz2-devel',
-        'libedit-devel', 'libevent-devel', 'libfbclient2-devel', 'libicu-devel',
+        'libedit-devel', 'libevent-devel', 'libfbclient-devel', 'libicu-devel',
         'libjpeg62-devel', 'libmcrypt-devel', 'libopenssl-devel',
-        'libtidy-0_99-0-devel', 'libtiff-devel', 'libxslt-devel',
+        'libtidy-devel', 'libtiff-devel', 'libxslt-devel',
         'libzip-devel', 'ncurses-devel', 'net-snmp-devel', 'openldap2-devel',
         'pam-devel', 'pcre-devel', 'pkg-config', 'systemd-devel',
         'libvpx-devel', 'libXft-devel', 'libXpm-devel', 'postfix',
