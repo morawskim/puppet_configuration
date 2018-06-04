@@ -17,7 +17,7 @@ node default {
         require => Class['mopensuse::zypper::repositories::devel_tools']
     }
 
-    package { ['cmake', 'python-pexpect', 'gdb', 'libstdc++-devel',
+    package { ['cmake', 'python2-pexpect', 'gdb', 'libstdc++-devel',
         'zlib-devel', 'man-pages', 'glibc-devel', 'gcc-c++', 'gcc', 'make']:
         ensure  => present,
     }
@@ -31,5 +31,4 @@ node default {
         group    => 'users',
         require => [ Class['mopensuse::user::rpm'], Class['mopensuse::packages::vcs'] ]
     }
-
 }
