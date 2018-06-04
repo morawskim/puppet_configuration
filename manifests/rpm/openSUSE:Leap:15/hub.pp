@@ -8,7 +8,7 @@ node default {
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
-    package {['go1.6']:
+    package {['go']:
         ensure  => present,
     }
 
