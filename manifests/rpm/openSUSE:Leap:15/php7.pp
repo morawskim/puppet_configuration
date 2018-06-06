@@ -25,14 +25,14 @@ node default {
         'libzip-devel', 'ncurses-devel', 'net-snmp-devel', 'openldap2-devel',
         'pam-devel', 'pcre-devel', 'pkg-config', 'systemd-devel',
         'libvpx-devel', 'libXft-devel', 'libXpm-devel', 'postfix',
-        're2c', 'sqlite2-devel',
+        're2c',
         'sqlite3-devel', 'tcpd-devel', 'unixODBC-devel', 'update-alternatives',
         'xorg-x11-devel', 'xz', 'git']:
         ensure  => present,
         require => Package['exim']
     }
 
-    package { 'libmcrypt-devel':
+    package { ['libmcrypt-devel', 'sqlite2-devel']:
       ensure  => present,
       require => Class['mopensuse::zypper::repositories::obs_morawskim'],
     }

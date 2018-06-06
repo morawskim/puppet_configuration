@@ -2,6 +2,7 @@ node default {
 
     include mopensuse::zypper::refresh
     include mopensuse::zypper::repositories::devel_tools
+    include mopensuse::zypper::repositories::obs_morawskim
     include mopensuse::user::rpm
     include mopensuse::packages::rpmbuild
 
@@ -23,11 +24,16 @@ node default {
         'libzip-devel', 'ncurses-devel', 'net-snmp-devel', 'openldap2-devel',
         'pam-devel', 'pcre-devel', 'pkg-config', 'systemd-devel',
         'libvpx-devel', 'libXft-devel', 'libXpm-devel', 'postfix',
-        're2c', 'sqlite2-devel', 'argon2', 'argon2-devel',
+        're2c', 'argon2', 'argon2-devel',
         'sqlite3-devel', 'tcpd-devel', 'unixODBC-devel', 'update-alternatives',
         'xorg-x11-devel', 'xz', 'git', 'libsodium-devel']:
         ensure  => present,
         require => Package['exim']
+    }
+
+    package { 'sqlite2-devel':
+        ensure  => present,
+        require => Class['mopensuse::zypper::repositories::obs_morawskim'],
     }
 
     package { 'postgresql-devel':
