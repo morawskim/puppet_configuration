@@ -1,0 +1,25 @@
+version: 5
+defaults:
+  datadir: hieradata
+  data_hash: yaml_data
+hierarchy:
+  - name: "rpmkeys"
+    paths:
+      - "nodes/firewalld/%{facts.fqdn}.yaml"
+      - "os/firewalld/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "rpmkeys.yaml"
+  - name: "zypprepo"
+    paths:
+      - "nodes/zypprepo/%{facts.fqdn}.yaml"
+      - "os/zypprepo/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "zypprepo.yaml"
+  - name: "firewalld"
+    paths:
+      - "nodes/firewalld/%{facts.fqdn}.yaml"
+      - "os/firewalld/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "firewalld.yaml"
+  - name: "packages"
+    paths:
+      - "nodes/packages/%{facts.fqdn}.yaml"
+      - "os/packages/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "packages.yaml"
