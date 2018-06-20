@@ -455,6 +455,13 @@ mopensuse::config::phpmyadmin40::phpmyadmin_servernode:
         user: ''
         myserver_port: 3308
 
+mopensuse::config::network_manager::files:
+    '/etc/NetworkManager/conf.d/vbox.conf':
+        source: 'puppet:///configuration/NetworkManager/vbox.conf'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
 vagrant_boxes:
     ubuntu:
         name: 'ubuntu/trusty64'
