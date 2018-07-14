@@ -1,0 +1,76 @@
+mopensuse::default_printer: 'samsung'
+mopensuse::printers:
+    samsung:
+        ensure      : 'present'
+        accept      : 'true'
+        description : 'samsung'
+        duplex      : 'None'
+        enabled     : 'true'
+        input_tray  : 'Auto'
+        location    : 'malina'
+        options     :
+            'copies' : '1'
+            'finishings' : '3'
+            'job-hold-until' : 'no-hold'
+            'job-priority' : '50'
+            'job-sheets' : 'none,none'
+            'number-up' : '1'
+            'printer-make-and-model' : 'Generic IPP Everywhere Printer'
+            'printer-state-reasons' : 'none'
+            'printer-type' : '2158620'
+            'printer-uri-supported' : 'ipp://localhost:631/printers/samsung2'
+        page_size   : 'A4'
+        ppd_options :
+            'OptionDuplex' : 'False'
+            'PrintQuality' : '0'
+            'PwgRasterDocumentType' : 'Black_8'
+            'Resolution' : '600dpi'
+        uri         : 'http://print.morawskim.pl:631/printers/samsung2010ml'
+    Brother_MFC-9340CDW:
+        ensure      : 'present'
+        accept      : 'true'
+        description : 'Brother MFC-9340CDW'
+        duplex      : 'None'
+        enabled     : 'true'
+        location    : 'sensi'
+        options     :
+            'copies' : '1'
+            'finishings' : '3'
+            'job-hold-until' : 'no-hold'
+            'job-priority' : '50'
+            'job-sheets' : 'none,none'
+            'marker-high-levels' : '100,100,100,100'
+            'marker-low-levels' : '10,10,10,10'
+            'number-up' : '1'
+            'printer-make-and-model' : 'Brother MFC-9320CW Foomatic/Postscript'
+            'printer-state-reasons' : 'toner-low-warning'
+            'printer-type' : '10530844'
+            'printer-uri-supported' : 'ipp://localhost:631/printers/Brother_MFC-9340CDW'
+        page_size   : 'A4'
+        ppd_options :
+            'Resolution' : '1200x1200dpi'
+        uri         : 'dnssd://Brother%20MFC-9340CDW._ipp._tcp.local/'
+
+#printer { 'samsung':
+  #ensure      : 'present',
+  #accept      : 'true',
+  #description : 'samsung',
+  #enabled     : 'true',
+  #options     : {'copies' : '1', 'finishings' : '3', 'job-hold-until' : 'no-hold', 'job-priority' : '50', 'job-sheets' : 'none,none', 'number-up' : '1', 'printer-make-and-model' : 'Samsung ML-2010 Foomatic/gdi', 'printer-state-reasons' : 'none', 'printer-type' : '8392708', 'printer-uri-supported' : 'ipp://localhost:631/printers/samsung'},
+  #page_size   : 'Letter',
+  #ppd_options : {'AllowReprint' : 'Yes', 'Altitude' : 'Low', 'Copies' : '1', 'Density' : '3', 'Economode' : 'Off', 'JamRecovery' : 'Yes', 'Manualfeed' : 'Off', 'MediaType' : 'Normal', 'PageTimeout' : '15', 'PowerSaveTime' : '5', 'PowerSaving' : 'On', 'Resolution' : '600x600dpi'},
+  #uri         : 'http://print.morawskim.pl:631/printers/samsung2010ml',
+#}
+#printer { 'samsung2':
+  #ensure      : 'present',
+  #accept      : 'true',
+  #description : 'samsung dodana recznie',
+  #duplex      : 'None',
+  #enabled     : 'true',
+  #input_tray  : 'Auto',
+  #location    : 'malina',
+  #options     : {'copies' : '1', 'finishings' : '3', 'job-hold-until' : 'no-hold', 'job-priority' : '50', 'job-sheets' : 'none,none', 'number-up' : '1', 'printer-make-and-model' : 'Generic IPP Everywhere Printer', 'printer-state-reasons' : 'none', 'printer-type' : '2158620', 'printer-uri-supported' : 'ipp://localhost:631/printers/samsung2'},
+  #page_size   : 'A4',
+  #ppd_options : {'OptionDuplex' : 'False', 'PrintQuality' : '0', 'PwgRasterDocumentType' : 'Black_8', 'Resolution' : '600dpi'},
+  #uri         : 'http://print.morawskim.pl:631/printers/samsung2010ml',
+#}

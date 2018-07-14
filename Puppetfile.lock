@@ -1,0 +1,157 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    lwf-remote_file (1.1.3)
+    puppet-staging (2.2.0)
+    puppetlabs-stdlib (4.25.1)
+
+GIT
+  remote: git://github.com/camptocamp/puppet-systemd.git
+  ref: 0.4.0
+  sha: 3584f3bfbe6c1658bc6c75ac7b4f61c5f92df774
+  specs:
+    puppet-systemd (0.4.0)
+
+GIT
+  remote: git://github.com/crayfishx/puppet-firewalld.git
+  ref: 3.4.0
+  sha: 882e722140c0ab21a2a55f782c76b777a9c073af
+  specs:
+    puppet-firewalld (3.4.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
+
+GIT
+  remote: git://github.com/deadpoint/puppet-zypprepo.git
+  ref: v2.2.1
+  sha: 713445d073def325996263812d4531d65b13e09d
+  specs:
+    puppet-zypprepo (2.2.1)
+
+GIT
+  remote: git://github.com/morawskim/puppet-mopensuse.git
+  ref: master
+  sha: 6b03afd4f2137e3fc20e8e88481f3f90d4476eed
+  specs:
+    puppet-mopensuse (0.1.0)
+
+GIT
+  remote: git://github.com/morawskim/puppet-phpfpm.git
+  ref: e9ec56b82d34a5c8e7c659947f81f7e642c4fab7
+  sha: e9ec56b82d34a5c8e7c659947f81f7e642c4fab7
+  specs:
+    puppet-phpfpm (0.0.11)
+
+GIT
+  remote: git://github.com/morawskim/puppet-phpmyadmin.git
+  ref: suse_support
+  sha: dbd903a7d20bdfddaf9a0088361cf004f6f22124
+  specs:
+    puppet-phpmyadmin (1.2.2)
+      puppetlabs-apache (>= 0.6.0)
+      puppetlabs-concat (>= 1.0.0)
+      puppetlabs-stdlib (>= 3.2.0)
+
+GIT
+  remote: git://github.com/morawskim/puppet-samba.git
+  ref: suse
+  sha: 57cecd6206ad35d235f15e06978f70ebcfe542bd
+  specs:
+    puppet-samba (0.3.2)
+
+GIT
+  remote: git://github.com/mosen/puppet-cups.git
+  ref: 1.4.1
+  sha: f986d4e38825a87bf9ebc5614bef19806055d683
+  specs:
+    puppet-cups (1.4.1)
+
+GIT
+  remote: git://github.com/pcfens/puppet-ca_cert.git
+  ref: v2.1.0
+  sha: 46e825e959dd680a754ea069da6f9882b1e44352
+  specs:
+    puppet-ca_cert (2.1.0)
+      lwf-remote_file (>= 1.1.2)
+      puppetlabs-stdlib (< 5.0.0, >= 3.0.0)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-apache.git
+  ref: 883ca3a226233563fcaf4f17bd1afe22eb1715b0
+  sha: 883ca3a226233563fcaf4f17bd1afe22eb1715b0
+  specs:
+    puppetlabs-apache (1.6.0)
+      puppetlabs-concat (< 2.0.0, >= 1.1.1)
+      puppetlabs-stdlib (< 5.0.0, >= 2.4.0)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-concat.git
+  ref: 1.1.1
+  sha: 0f43e1a4bdfe6ea0a2c0ba52dbbec6a0e5da6fba
+  specs:
+    puppetlabs-concat (1.1.1)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-inifile.git
+  ref: 3be00347bba0828d54c55881913e703913c8fb1e
+  sha: 3be00347bba0828d54c55881913e703913c8fb1e
+  specs:
+    puppetlabs-inifile (1.6.0)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-mysql.git
+  ref: 3.11.0
+  sha: a48069e89a4c06abccbb3595d2c782c7cd6e3254
+  specs:
+    puppetlabs-mysql (3.11.0)
+      puppet-staging (< 3.0.0, >= 1.0.1)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-vcsrepo.git
+  ref: 51c8303f29d3dac4f723a2e94b15a12405525d76
+  sha: 51c8303f29d3dac4f723a2e94b15a12405525d76
+  specs:
+    puppetlabs-vcsrepo (1.3.2)
+
+GIT
+  remote: git://github.com/smoeding/puppet-file_capability.git
+  ref: v1.0.1
+  sha: b43fb9b68b2f439b38070ab0784385adf5965a34
+  specs:
+    puppet-file_capability (1.0.1)
+
+GIT
+  remote: git://github.com/stschulte/puppet-rpmkey.git
+  ref: v1.0.3
+  sha: 740308229b152ce0a5d343afac351efa782eeee0
+  specs:
+    puppet-rpmkey (1.0.3)
+
+GIT
+  remote: git://github.com/voxpupuli/puppet-nodejs.git
+  ref: v2.3.0
+  sha: 4aaefa68ec51d2db81f9ff4894b8b60e1e3cca0c
+  specs:
+    puppet-nodejs (2.3.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
+
+DEPENDENCIES
+  puppet-ca_cert (>= 0)
+  puppet-cups (>= 0)
+  puppet-file_capability (>= 0)
+  puppet-firewalld (>= 0)
+  puppet-mopensuse (>= 0)
+  puppet-nodejs (>= 0)
+  puppet-phpfpm (>= 0)
+  puppet-phpmyadmin (>= 0)
+  puppet-rpmkey (>= 0)
+  puppet-samba (>= 0)
+  puppet-systemd (>= 0)
+  puppet-zypprepo (>= 0)
+  puppetlabs-apache (>= 0)
+  puppetlabs-concat (>= 0)
+  puppetlabs-inifile (>= 0)
+  puppetlabs-mysql (>= 0)
+  puppetlabs-vcsrepo (>= 0)
+

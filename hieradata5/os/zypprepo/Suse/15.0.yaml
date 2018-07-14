@@ -1,0 +1,7 @@
+mopensuse::zypprepos:
+    puppet:
+        enabled: 0
+    security_tools:
+        enabled: 0
+    devel_languages_ruby_extensions:
+        baseurl    : 'http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_%{::operatingsystemrelease}/'

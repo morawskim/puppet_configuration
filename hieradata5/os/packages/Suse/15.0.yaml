@@ -1,0 +1,46 @@
+mopensuse::packages:
+    rubygem-augeas:
+        name: ruby2.5-rubygem-ruby-augeas
+    bundler:
+        name: ruby2.5-rubygem-bundler
+    ruby-devel:
+        name: ruby2.5-devel
+    ruby-devel-extra:
+        name: ruby2.5-devel-extra
+    foreman:
+        name: ruby2.5-rubygem-foreman
+    nodejs:
+        name: nodejs8
+    nodejs-devel:
+        name: nodejs8-devel
+    patterns-devel_rpm_build:
+        name: patterns-devel-base-devel_rpm_build
+    patterns-devel_C_C++:
+        name: 'patterns-devel-C-C++-devel_C_C++'
+        ensure: present
+    patterns-devel_qt5:
+        name: 'patterns-kde-devel_qt5'
+        ensure: present
+    patterns-devel_kde:
+        name: 'patterns-kde-devel_kde'
+    patterns-devel_ruby:
+        name: 'patterns-devel-ruby-devel_ruby'
+  
+
+
+#ruby-build
+#File /usr/lib64/libgdbm_compat.so.4.0.0
+  #from install of
+     #libgdbm_compat4-1.14.1-lp150.452.1.x86_64 (A project for basic libraries shared among multiple projects (openSUSE_Leap_15.0))
+  #conflicts with file from package
+     #libgdbm4-1.12-lp150.1.49.x86_64 (@System)
+     
+
+
+#simplecov
+#lnav
+#mysql_client
+#O-Saft
+#phpldapadmin
+#python-gnuplot-py
+#fzf

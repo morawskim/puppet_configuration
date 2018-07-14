@@ -1,0 +1,90 @@
+firewalld::package: firewalld
+firewalld::package_ensure: present
+firewalld::config_package: undef
+firewalld::install_gui: false
+firewalld::service_ensure: running
+firewalld::service_enable: true
+firewalld::default_zone: block
+
+firewalld::services:
+  'Allow SSH from the internal zone':
+    ensure: present
+    service: ssh
+    zone: internal
+  'Allow jenkins (8080) from the internal zone':
+    ensure: present
+    service: jenkins
+    zone: internal
+  'Allow git from the internal zone':
+    ensure: present
+    service: git
+    zone: internal
+  'Allow http from the internal zone':
+    ensure: present
+    service: http
+    zone: internal
+  'Allow https from the internal zone':
+    ensure: present
+    service: https
+    zone: internal
+  'Allow nfs3 from the internal zone':
+    ensure: present
+    service: nfs3
+    zone: internal
+  'Allow rpc-bind from the internal zone':
+    ensure: present
+    service: rpc-bind
+    zone: internal
+  'Allow samba from the internal zone':
+    ensure: present
+    service: samba
+    zone: internal
+  'Allow samba-client from the internal zone':
+    ensure: present
+    service: samba-client
+    zone: internal
+  'Allow vnc-server from the internal zone':
+    ensure: present
+    service: vnc-server
+    zone: internal
+  'Allow dns from the internal zone':
+    ensure: present
+    service: dns
+    zone: internal
+
+firewalld::ports:
+  'Open port mailhog-http (8025) in the internal zone':
+    ensure: present
+    zone: internal
+    port: 8025
+    protocol: 'tcp'
+  'Open port 7171/tcp in the internal zone':
+    ensure: present
+    zone: internal
+    port: 7171
+    protocol: 'tcp'
+#  'Open port kdeconnect tcp':
+#    ensure: present
+#    zone: internal
+#    port: '1714:1764'
+#    protocol: 'tcp'
+#  'Open port kdeconnect udp':
+#    ensure: present
+#    zone: internal
+#    port: '1714:1764'
+#    protocol: 'udp'
+#  'Open port steam tcp':
+#    ensure: present
+#    zone: internal
+#    port: '27036:27037',
+#    protocol: 'tcp'
+#  'Open port steam udp':
+#    ensure: present
+#    zone: internal
+#    port: '27031',
+#    protocol: 'tcp'
+#  'Open port steam udp2':
+#    ensure: present
+#    zone: internal
+#    port: '27036',
+#    protocol: 'tcp'

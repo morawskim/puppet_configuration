@@ -23,3 +23,13 @@ hierarchy:
       - "nodes/packages/%{facts.fqdn}.yaml"
       - "os/packages/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
       - "packages.yaml"
+  - name: "printers"
+    paths:
+      - "nodes/printers/%{facts.fqdn}.yaml"
+      - "os/printers/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "printers.yaml"
+  - name: "x509"
+    paths:
+      - "nodes/x509/%{facts.fqdn}.yaml"
+      - "os/x509/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "x509.yaml"

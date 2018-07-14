@@ -1,0 +1,5 @@
+ca_cert::install_package: true
+ca_cert::ca_certs:
+    hostinghouse:
+        ensure: trusted
+        source: 'https://gist.githubusercontent.com/morawskim/eab48fd2ff790afb3da80bdca71a6fc2/raw/19ea1e908bdf612cdfb31a762584cd645368ffcc/hostinghouse.pem'
