@@ -9,7 +9,7 @@ node default {
     $rpm_home=$::mopensuse::user::rpm::user_home_path
     $rpmbuild_top="${rpm_home}/rpmbuild"
 
-    package {['python-base', 'python-setuptools', 'python-devel', 'python-rpm-macros']:
+    package {['python-base', 'python2-setuptools', 'python-devel', 'python-rpm-macros']:
         ensure  => present,
         require => Class['mopensuse::zypper::repositories::devel_languages_python']
     }
