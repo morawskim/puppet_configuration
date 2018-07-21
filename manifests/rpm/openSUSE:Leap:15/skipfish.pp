@@ -19,7 +19,7 @@ node default {
         require => [ Class['mopensuse::user::rpm'], Class['mopensuse::packages::vcs'] ]
     }
 
-    package { ['libopenssl-devel', 'libidn-devel', 'zlib-devel', 'pcre-devel']:
+    package { ['libopenssl-1_0_0-devel', 'libidn-devel', 'zlib-devel', 'pcre-devel']:
         ensure => present
     }
 
