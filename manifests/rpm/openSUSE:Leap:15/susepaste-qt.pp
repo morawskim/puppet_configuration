@@ -20,7 +20,7 @@ node default {
     }
 
     package { ['cmake', 'libQt5Widgets-devel', 'libQt5Core-devel',
-      'libQt5Gui-devel', 'update-desktop-files', 'kde4-filesystem']:
+      'libQt5Gui-devel', 'update-desktop-files', 'kf5-filesystem']:
         ensure => present
     }
 
