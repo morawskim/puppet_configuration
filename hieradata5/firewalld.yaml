@@ -51,6 +51,10 @@ firewalld::services:
     ensure: present
     service: dns
     zone: internal
+  'Allow kdeconnect from the internal zone':
+    ensure: present
+    service: kdeconnect-kde
+    zone: internal
 
 firewalld::ports:
   'Open port mailhog-http (8025) in the internal zone':

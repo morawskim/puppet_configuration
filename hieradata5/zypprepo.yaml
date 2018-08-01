@@ -380,6 +380,15 @@ mopensuse::zypprepos:
         gpgkey     : 'http://download.opensuse.org/repositories/systemsmanagement:/machinery/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
         type       : 'rpm-md'
 
+    system_snappy:
+        autorefresh: '1'
+        baseurl    : 'http://download.opensuse.org/repositories/system:/snappy/openSUSE_Leap_%{::operatingsystemrelease}/'
+        descr      : 'Official repository for the snapd package (snap package manager) (openSUSE_Leap_%{::operatingsystemrelease})'
+        enabled    : '1'
+        gpgcheck   : '1'
+        gpgkey     : 'http://download.opensuse.org/repositories/system:/snappy/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+        type       : 'rpm-md'
+
     utilities:
         autorefresh: '1'
         baseurl    : 'http://download.opensuse.org/repositories/utilities/openSUSE_Leap_%{::operatingsystemrelease}'

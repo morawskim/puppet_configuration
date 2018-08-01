@@ -88,7 +88,7 @@ mopensuse::rpmkeys:
         #name: 'EF8D349F'
         #ensure: 'present'
     devel_languages_ruby_extensions:
-        source: "http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+        source: "http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
         name: '0E9AF123'
         ensure: 'present'
     devel_languages_rust:
@@ -134,6 +134,10 @@ mopensuse::rpmkeys:
     systemsmanagement_machinery:
         source: "http://download.opensuse.org/repositories/systemsmanagement:/machinery/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
         name: 'A0E46E11'
+        ensure: 'present'
+    system_snappy:
+        source: "http://download.opensuse.org/repositories/system:/snappy/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
+        name: 'ED340235'
         ensure: 'present'
     utilities:
         source: "http://download.opensuse.org/repositories/utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"

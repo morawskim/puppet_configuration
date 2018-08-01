@@ -1,0 +1,136 @@
+mopensuse::user::config::vim::vcsrepo:
+  '/home/vagrant/.config/vim':
+      path       : '/home/marcin/.config/vim'
+      ensure     : last
+      provider   : git
+      source     : 'git@github.com:morawskim/vimdot.git'
+      submodules : true
+
+mopensuse::user::config::vim::files:
+  vimrc:
+      path    : '/home/marcin/.vimrc'
+      ensure  : link
+      target  : "/home/marcin/.config/vim/vimrc"
+  gvim:
+      path    : '/home/marcin/.gvimrc'
+      ensure  : link
+      target  : "/home/marcin/.config/vim/vimrc"
+
+#account
+mopensuse::user::marcin::password: 'mmo'
+mopensuse::user::marcin::username: 'marcin'
+mopensuse::user::marcin::user_home_path: '/home/marcin'
+mopensuse::user::marcin::realname: 'Marcin Morawski'
+mopensuse::user::marcin::groups:
+  - www
+  - vboxusers
+  - users
+  - systemd-journal
+  - sshfs
+  - docker
+  - disk
+  - dialout
+  - osc
+
+mopensuse::user::config::files::files:
+    '/home/marcin/.local/bin/neofetch':
+        source: 'https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch'
+        owner: 'marcin'
+        group: 'marcin'
+        mode: '0750'
+    '/srv/git/morawskim/rpmbuild.git':
+        ensure: 'link'
+        target: '/home/marcin/rpmbuild/.git/'
+        type  : 'link'
+    '/home/marcin/.local/bin/fpp':
+        ensure: 'link'
+        target: '/home/marcin/.local/share/fpp/fpp'
+        type  : 'link'
+    '/home/marcin/.local/bin/cipherscan':
+        ensure: 'link'
+        target: '/home/marcin/.local/share/cipherscan/cipherscan'
+        type  : 'link'
+
+mopensuse::user::config::dirs::dirs:
+    '/home/marcin/mnt':
+        ensure : directory
+        mode   : '0750'
+        owner  : 'marcin'
+        group  : 'marcin'
+    '/home/marcin/projekty':
+        ensure : directory
+        mode   : '0750'
+        owner  : 'marcin'
+        group  : 'marcin'
+    '/home/marcin/public_html':
+        ensure : directory
+        mode   : '0755'
+        owner  : 'marcin'
+        group  : 'marcin'
+    '/home/marcin/rpmbuild':
+        ensure : directory
+        mode   : '0755'
+        owner  : 'marcin'
+        group  : 'marcin'
+    '/home/marcin/.tmux/plugins/':
+        ensure : directory
+        mode   : '0700'
+        owner  : 'marcin'
+        group  : 'marcin'
+
+mopensuse::user::config::vcsrepos::vcsrepos:
+    '/home/marcin/.local/share/rbenv/plugins/rbenv-gemset':
+        ensure     : present
+        provider   : git
+        source     : 'git://github.com/jamis/rbenv-gemset.git'
+        submodules : true
+        depth      : 1
+        revision   : 'v0.5.9'
+    '/home/marcin/rpmbuild':
+        ensure     : latest
+        provider   : git
+        source     : 'git@github.com:morawskim/rpmbuild.git'
+        submodules : true
+        revision   : 'openSUSE_15.0'
+    #'/home/marcin/projekty/electron-api-demos':
+        #ensure     : latest
+        #provider   : git
+        #source     : 'https://github.com/electron/electron-api-demos.git'
+        #submodules : true
+    '/home/marcin/.local/nvm':
+        ensure     : present
+        provider   : git
+        source     : 'https://github.com/creationix/nvm.git'
+        submodules : false
+        revision   : 'v0.33.11'
+    '/home/marcin/.local/share/fpp':
+        ensure     : present
+        provider   : git
+        source     : 'https://github.com/facebook/PathPicker.git'
+        submodules : false
+        revision   : '0.7.2'
+    '/home/marcin/.local/share/cipherscan':
+        ensure     : present
+        provider   : git
+        source     : 'https://github.com/mozilla/cipherscan.git'
+        submodules : false
+        revision   : 'master'
+        depth      : 1
+    '/home/marcin/.tmux/plugins/tpm':
+        ensure     : present
+        provider   : git
+        source     : 'https://github.com/tmux-plugins/tpm'
+        submodules : false
+        revision   : 'master'
+    '/home/marcin/projekty/vagrant':
+        ensure     : present
+        provider   : git
+        source     : 'https://github.com/hashicorp/vagrant.git'
+        submodules : false
+        revision   : 'master'
+    '/home/marcin/projekty/morawskim.github.io':
+        ensure     : latest
+        provider   : git
+        source     : 'git@github.com:morawskim/morawskim.github.io.git'
+        submodules : false
+        revision   : 'master'

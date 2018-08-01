@@ -1,0 +1,96 @@
+mopensuse::services:
+    'apache2':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'cups':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'docker':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'firewalld':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'git-daemon':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'mailhog':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'mongodb':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'nfsserver':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'nullmailer':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'php53v-fpm':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'php54v-fpm':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'php55v-fpm':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'php56v-fpm':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'php70v-fpm':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'php71v-fpm':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'php72v-fpm':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'redis@default':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'selenium':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'sshd':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true

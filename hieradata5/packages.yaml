@@ -14,6 +14,8 @@ mopensuse::packages:
     rubygem-augeas:
         name: ruby2.1-rubygem-ruby-augeas
         ensure: present
+    rubygem-debase-ruby_core_source:
+        ensure: present
     augeas:
         ensure: present
     autoconf213:
@@ -109,8 +111,6 @@ mopensuse::packages:
     valgrind-devel:
         ensure: present
     rbenv:
-        ensure: present
-    simplecov:
         ensure: present
     libcap-progs:
         ensure: present
@@ -213,6 +213,8 @@ mopensuse::packages:
         ensure: present
     monit:
         ensure: present
+    ncdu:
+        ensure: present
     iotop:
         ensure: present
     htop:
@@ -235,9 +237,15 @@ mopensuse::packages:
         ensure: present
     mariadb-client:
         ensure: present
-    mysql_client:
+    mongodb-server:
         ensure: present
+    mongodb-shell:
+        ensure: present
+    #mysql_client:
+        #ensure: present
     mysql-utilities:
+        ensure: present
+    mysql-sandbox:
         ensure: present
     mytop:
         ensure: present
@@ -295,8 +303,8 @@ mopensuse::packages:
         ensure: present
     pdfgrep:
         ensure: present
-    php-build:
-        ensure: present
+    #php-build:
+        #ensure: present
     php7:
         ensure: present
     php7-fpm:
@@ -355,146 +363,146 @@ mopensuse::packages:
         ensure: present
     php7-xdebug:
         ensure: present
-    php70v:
-        ensure: present
-    php70v-fpm:
-        ensure: present
-    php70v-mysql:
-        ensure: present
-    php70v-ldap:
-        ensure: present
-    php70v-soap:
-        ensure: present
-    php70v-iconv:
-        ensure: present
-    php70v-pgsql:
-        ensure: present
-    php70v-phar:
-        ensure: present
-    php70v-devel:
-        ensure: present
-    php70v-readline:
-        ensure: present
-    php70v-curl:
-        ensure: present
-    php70v-mbstring:
-        ensure: present
-    php70v-json:
-        ensure: present
-    php70v-intl:
-        ensure: present
-    php70v-gettext:
-        ensure: present
-    php70v-xsl:
-        ensure: present
-    php70v-zlib:
-        ensure: present
-    php70v-xmlwriter:
-        ensure: present
-    php70v-bcmath:
-        ensure: present
-    php70v-sockets:
-        ensure: present
-    php70v-pcntl:
-        ensure: present
-    php70v-ctype:
-        ensure: present
-    php70v-gd:
-        ensure: present
-    php70v-xmlreader:
-        ensure: present
-    php70v-zip:
-        ensure: present
-    php70v-fileinfo:
-        ensure: present
-    php70v-tokenizer:
-        ensure: present
-    php70v-exif:
-        ensure: present
-    php70v-mcrypt:
-        ensure: present
-    php70v-ftp:
-        ensure: present
-    php70v-xdebug:
-        ensure: present
-    php70v-redis:
-        ensure: present
-    php70v-imagick:
-        ensure: present
-    php70v-mailparse:
-        ensure: present
-    php70v-gearman:
-        ensure: present
-    php71v:
-        ensure: present
-    php71v-fpm:
-        ensure: present
-    php71v-mysql:
-        ensure: present
-    php71v-ldap:
-        ensure: present
-    php71v-soap:
-        ensure: present
-    php71v-iconv:
-        ensure: present
-    php71v-pgsql:
-        ensure: present
-    php71v-phar:
-        ensure: present
-    php71v-devel:
-        ensure: present
-    php71v-readline:
-        ensure: present
-    php71v-curl:
-        ensure: present
-    php71v-mbstring:
-        ensure: present
-    php71v-json:
-        ensure: present
-    php71v-intl:
-        ensure: present
-    php71v-gettext:
-        ensure: present
-    php71v-xsl:
-        ensure: present
-    php71v-zlib:
-        ensure: present
-    php71v-xmlwriter:
-        ensure: present
-    php71v-bcmath:
-        ensure: present
-    php71v-sockets:
-        ensure: present
-    php71v-pcntl:
-        ensure: present
-    php71v-ctype:
-        ensure: present
-    php71v-gd:
-        ensure: present
-    php71v-xmlreader:
-        ensure: present
-    php71v-zip:
-        ensure: present
-    php71v-fileinfo:
-        ensure: present
-    php71v-tokenizer:
-        ensure: present
-    php71v-exif:
-        ensure: present
-    php71v-mcrypt:
-        ensure: present
-    php71v-ftp:
-        ensure: present
-    php71v-xdebug:
-        ensure: present
-    php71v-redis:
-        ensure: present
-    php71v-imagick:
-        ensure: present
-    php71v-mailparse:
-        ensure: present
-    php71v-gearman:
-        ensure: present
+    #php70v:
+        #ensure: present
+    #php70v-fpm:
+        #ensure: present
+    #php70v-mysql:
+        #ensure: present
+    #php70v-ldap:
+        #ensure: present
+    #php70v-soap:
+        #ensure: present
+    #php70v-iconv:
+        #ensure: present
+    #php70v-pgsql:
+        #ensure: present
+    #php70v-phar:
+        #ensure: present
+    #php70v-devel:
+        #ensure: present
+    #php70v-readline:
+        #ensure: present
+    #php70v-curl:
+        #ensure: present
+    #php70v-mbstring:
+        #ensure: present
+    #php70v-json:
+        #ensure: present
+    #php70v-intl:
+        #ensure: present
+    #php70v-gettext:
+        #ensure: present
+    #php70v-xsl:
+        #ensure: present
+    #php70v-zlib:
+        #ensure: present
+    #php70v-xmlwriter:
+        #ensure: present
+    #php70v-bcmath:
+        #ensure: present
+    #php70v-sockets:
+        #ensure: present
+    #php70v-pcntl:
+        #ensure: present
+    #php70v-ctype:
+        #ensure: present
+    #php70v-gd:
+        #ensure: present
+    #php70v-xmlreader:
+        #ensure: present
+    #php70v-zip:
+        #ensure: present
+    #php70v-fileinfo:
+        #ensure: present
+    #php70v-tokenizer:
+        #ensure: present
+    #php70v-exif:
+        #ensure: present
+    #php70v-mcrypt:
+        #ensure: present
+    #php70v-ftp:
+        #ensure: present
+    #php70v-xdebug:
+        #ensure: present
+    #php70v-redis:
+        #ensure: present
+    #php70v-imagick:
+        #ensure: present
+    #php70v-mailparse:
+        #ensure: present
+    #php70v-gearman:
+        #ensure: present
+    #php71v:
+        #ensure: present
+    #php71v-fpm:
+        #ensure: present
+    #php71v-mysql:
+        #ensure: present
+    #php71v-ldap:
+        #ensure: present
+    #php71v-soap:
+        #ensure: present
+    #php71v-iconv:
+        #ensure: present
+    #php71v-pgsql:
+        #ensure: present
+    #php71v-phar:
+        #ensure: present
+    #php71v-devel:
+        #ensure: present
+    #php71v-readline:
+        #ensure: present
+    #php71v-curl:
+        #ensure: present
+    #php71v-mbstring:
+        #ensure: present
+    #php71v-json:
+        #ensure: present
+    #php71v-intl:
+        #ensure: present
+    #php71v-gettext:
+        #ensure: present
+    #php71v-xsl:
+        #ensure: present
+    #php71v-zlib:
+        #ensure: present
+    #php71v-xmlwriter:
+        #ensure: present
+    #php71v-bcmath:
+        #ensure: present
+    #php71v-sockets:
+        #ensure: present
+    #php71v-pcntl:
+        #ensure: present
+    #php71v-ctype:
+        #ensure: present
+    #php71v-gd:
+        #ensure: present
+    #php71v-xmlreader:
+        #ensure: present
+    #php71v-zip:
+        #ensure: present
+    #php71v-fileinfo:
+        #ensure: present
+    #php71v-tokenizer:
+        #ensure: present
+    #php71v-exif:
+        #ensure: present
+    #php71v-mcrypt:
+        #ensure: present
+    #php71v-ftp:
+        #ensure: present
+    #php71v-xdebug:
+        #ensure: present
+    #php71v-redis:
+        #ensure: present
+    #php71v-imagick:
+        #ensure: present
+    #php71v-mailparse:
+        #ensure: present
+    #php71v-gearman:
+        #ensure: present
     phpldapadmin:
         ensure: present
     phpMyAdmin:
@@ -503,9 +511,14 @@ mopensuse::packages:
         ensure: present
     pktstat:
         ensure: present
+    postfix:
+        ensure: absent
     nullmailer:
         ensure: present
+        #require: Package['postfix'] nie dziala blad budowania katalogu
     powerline:
+        ensure: present
+    tmux-powerline:
         ensure: present
     procps:
         ensure: present
@@ -554,8 +567,8 @@ mopensuse::packages:
         ensure: present
     samba-client:
         ensure: present
-    python-gnuplot-py:
-        ensure: present
+    #python-gnuplot-py:
+        #ensure: present
     python-pyx:
         ensure: present
     scapy:
@@ -632,6 +645,8 @@ mopensuse::packages:
         ensure: present
     yadm:
         ensure: present
+    yarn:
+        ensure: present
     youtube-dl:
         ensure: present
     yum-scripts:
@@ -652,10 +667,10 @@ mopensuse::packages:
         ensure: present
     cgit-filter-syntaxhiglight:
         ensure: present
-    cheat:
-        ensure: present
-    cheat-bash-completion:
-        ensure: present
+    #cheat:
+        #ensure: present
+    #cheat-bash-completion:
+        #ensure: present
     cloudflare-tools:
         ensure: present
     composer:
@@ -696,8 +711,9 @@ mopensuse::packages:
         ensure: present
     hub:
         ensure: present
+    # opensuse 15.0 include hub with bash completion
     hub-bash-completion:
-        ensure: present
+        ensure: absent
     jetbrains-toolbox:
         ensure: present
     jmeter:
@@ -722,8 +738,6 @@ mopensuse::packages:
         ensure: present
     password-store-import:
         ensure: present
-    php-build:
-        ensure: present
     php-docs:
         ensure: present
     plantuml:
@@ -734,6 +748,8 @@ mopensuse::packages:
         ensure: present
     python-pipsi:
         ensure: present
+    python3-psutil:
+        ensure: present
     rr:
         ensure: present
     ruby-build:
@@ -741,8 +757,6 @@ mopensuse::packages:
     selenium:
         ensure: present
     selenium-chromedriver:
-        ensure: present
-    skipfish:
         ensure: present
     smtp-cli:
         ensure: present
@@ -755,8 +769,6 @@ mopensuse::packages:
     susepaste-qt:
         ensure: present
     swaks:
-        ensure: present
-    tcpproxy:
         ensure: present
     telegram-desktop:
         ensure: present
@@ -776,178 +788,182 @@ mopensuse::packages:
         ensure: present
 
     
-        #selenium-chromedriver:
-            #ensure: present
-        #xorg-x11-Xvnc:
-            #ensure: present
-        #x11vnc:
-            #ensure: present
-        #byzanz:
-            #ensure: present
-        #calibre:
-            #ensure: present
-        #calligra-plan:
-            #ensure: present
-        #cherrytree:
-            #ensure: present
-        #google-chrome-stable:
-            #ensure: present
-        #chromium:
-            #ensure: present
-        #d-feet:
-            #ensure: present
-        #filezilla:
-            #ensure: present
-        #4pane:
-            #ensure: present
-        #ghex:
-            #ensure: present
-        #gitg:
-            #ensure: present
-        #glade:
-            #ensure: present
-        #glogg:
-            #ensure: present
-        #Mesa-demo-x:
-            #ensure: present
-        #gnome-disk-utility:
-            #ensure: present
-        #gobby:
-            #ensure: present
-        #gvim:
-            #ensure: present
-        #hardinfo:
-            #ensure: present
-        #jetbrains-toolbox:
-            #ensure: present
-        #kapptemplate:
-            #ensure: present
-        #kate:
-            #ensure: present
-        #kcachegrind:
-            #ensure: present
-        #kdbg:
-            #ensure: present
-        #kdeconnect-kde:
-            #ensure: present
-        #kdiff3:
-            #ensure: present
-        #kio-gdrive:
-            #ensure: present
-        #krdc:
-            #ensure: present
-        #krusader:
-            #ensure: present
-        #labplot:
-            #ensure: present
-        #libqt4-x11:
-            #ensure: present
-        #kdialog:
-            #ensure: present
-        #live-usb-gui:
-            #ensure: present
-        #lshw-gui:
-            #ensure: present
-        #minitube:
-            #ensure: present
-        #MozillaThunderbird:
-            #ensure: present
-        #MPlayer:
-            #ensure: present
-        #mysql-workbench:
-            #ensure: present
-        #nemiver:
-            #ensure: present
-        #okteta:
-            #ensure: present
-        #owasp-zap:
-            #ensure: present
-        #owncloud-client:
-            #ensure: present
-        #pdfchain:
-            #ensure: present
-        #pdfcompare:
-            #ensure: present
-        #peek:
-            #ensure: present
-        #pgadmin3:
-            #ensure: present
-        #pidgin:
-            #ensure: present
-        #plantuml:
-            #ensure: present
-        #plasma-nm5-openvpn:
-            #ensure: present
-        #poedit:
-            #ensure: present
-        #Postman:
-            #ensure: present
-        #qps:
-            #ensure: present
-        #xwininfo:
-            #ensure: present
-        #recordmydesktop:
-            #ensure: present
-        #qt-recordmydesktop:
-            #ensure: present
-        #redshift:
-            #ensure: present
-        #retext:
-            #ensure: present
-        #rsibreak:
-            #ensure: present
-        #scrot:
-            #ensure: present
-        #sddm:
-            #ensure: present
-        #shutter:
-            #ensure: present
-        #skrooge:
-            #ensure: present
-        #skypeforlinux:
-            #ensure: present
-        #slack:
-            #ensure: present
-        #SoapUI:
-            #ensure: present
-        #sqlitebrowser:
-            #ensure: present
-        #steam:
-            #ensure: present
-        #step:
-            #ensure: present
-        #susepaste-screenshot:
-            #ensure: present
-        #susepaste-qt:
-            #ensure: present
-        #telegram-desktop:
-            #ensure: present
-        #gitk:
-            #ensure: present
-        #kdesvn:
-            #ensure: present
-        #virtualbox-qt:
-            #ensure: present
-        #vivaldi-stable:
-            #ensure: present
-        #wireshark-ui-qt:
-            #ensure: present
-        #xbindkeys:
-            #ensure: present
-        #xclip:
-            #ensure: present
-        #xorg-x11-server-extra:
-            #ensure: present
-        #xrectsel:
-            #ensure: present
-        #xsel:
-            #ensure: present
-        #yakuake:
-            #ensure: present
-        #zeal:
-            #ensure: present
-        #zenity:
-            #ensure: present
-        #plasma-browser-integration
-            #ensure: present
+    selenium-chromedriver:
+        ensure: present
+    xorg-x11-Xvnc:
+        ensure: present
+    x11vnc:
+        ensure: present
+    byzanz:
+        ensure: present
+    calibre:
+        ensure: present
+    calligra-plan:
+        ensure: present
+    cherrytree:
+        ensure: present
+    google-chrome-stable:
+        ensure: present
+    chromium:
+        ensure: present
+    d-feet:
+        ensure: present
+    filezilla:
+        ensure: present
+    4pane:
+        ensure: present
+    ghex:
+        ensure: present
+    gitg:
+        ensure: present
+    glade:
+        ensure: present
+    glogg:
+        ensure: present
+    Mesa-demo-x:
+        ensure: present
+    gnome-disk-utility:
+        ensure: present
+    gobby:
+        ensure: present
+    gvim:
+        ensure: present
+    hardinfo:
+        ensure: present
+    jetbrains-toolbox:
+        ensure: present
+    kapptemplate:
+        ensure: present
+    kate:
+        ensure: present
+    kcachegrind:
+        ensure: present
+    kdbg:
+        ensure: present
+    kdeconnect-kde:
+        ensure: present
+    kdiff3:
+        ensure: present
+    kio-gdrive:
+        ensure: present
+    krdc:
+        ensure: present
+    krusader:
+        ensure: present
+    labplot:
+        ensure: present
+    libqt4-x11:
+        ensure: present
+    kdialog:
+        ensure: present
+    live-usb-gui:
+        ensure: present
+    lshw-gui:
+        ensure: present
+    minitube:
+        ensure: present
+    MozillaThunderbird:
+        ensure: present
+    MPlayer:
+        ensure: present
+    mysql-workbench:
+        ensure: present
+    nemiver:
+        ensure: present
+    okteta:
+        ensure: present
+    owasp-zap:
+        ensure: present
+    owncloud-client:
+        ensure: present
+    pdfchain:
+        ensure: present
+    pdfcompare:
+        ensure: present
+    peek:
+        ensure: present
+    pgadmin3:
+        ensure: present
+    pidgin:
+        ensure: present
+    plantuml:
+        ensure: present
+    plasma-nm5-openvpn:
+        ensure: present
+    poedit:
+        ensure: present
+    Postman:
+        ensure: present
+    qps:
+        ensure: present
+    qutebrowser:
+        ensure: present
+    xwininfo:
+        ensure: present
+    recordmydesktop:
+        ensure: present
+    qt-recordmydesktop:
+        ensure: present
+    redshift:
+        ensure: present
+    retext:
+        ensure: present
+    rsibreak:
+        ensure: present
+    scrot:
+        ensure: present
+    sddm:
+        ensure: present
+    shutter:
+        ensure: present
+    skrooge:
+        ensure: present
+    skypeforlinux:
+        ensure: present
+    slack:
+        ensure: present
+    SoapUI:
+        ensure: present
+    sqlitebrowser:
+        ensure: present
+    steam:
+        ensure: present
+    step:
+        ensure: present
+    susepaste-screenshot:
+        ensure: present
+    susepaste-qt:
+        ensure: present
+    telegram-desktop:
+        ensure: present
+    gitk:
+        ensure: present
+    kdesvn:
+        ensure: present
+    virtualbox-qt:
+        ensure: present
+    vivaldi-stable:
+        ensure: present
+    wireshark-ui-qt:
+        ensure: present
+    xbindkeys:
+        ensure: present
+    xclip:
+        ensure: present
+    xorg-x11-server-extra:
+        ensure: present
+    xrectsel:
+        ensure: present
+    xsel:
+        ensure: present
+    yakuake:
+        ensure: present
+    zeal:
+        ensure: present
+    zenity:
+        ensure: present
+    plasma-browser-integration:
+        ensure: present
+    snapd:
+        ensure: present
 

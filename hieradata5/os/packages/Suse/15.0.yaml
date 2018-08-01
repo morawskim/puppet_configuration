@@ -7,6 +7,8 @@ mopensuse::packages:
         name: ruby2.5-devel
     ruby-devel-extra:
         name: ruby2.5-devel-extra
+    rubygem-debase-ruby_core_source:
+        name: ruby2.5-rubygem-debase-ruby_core_source
     foreman:
         name: ruby2.5-rubygem-foreman
     nodejs:
@@ -25,8 +27,13 @@ mopensuse::packages:
         name: 'patterns-kde-devel_kde'
     patterns-devel_ruby:
         name: 'patterns-devel-ruby-devel_ruby'
-  
-
+    # nothing provide php-mcrypt
+    phpMyAdmin40:
+        ensure: absent
+    pdfchain:
+        ensure: absent
+    fzf-vim:
+        ensure: absent
 
 #ruby-build
 #File /usr/lib64/libgdbm_compat.so.4.0.0
