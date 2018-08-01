@@ -74,3 +74,9 @@ mod 'puppet-firewalld',
 mod 'puppet-ca_cert',
   :git => "git://github.com/pcfens/puppet-ca_cert.git",
   :ref => 'v2.1.0'
+
+mod 'puppet-mongodb',
+  :git => "git://github.com/voxpupuli/puppet-mongodb.git",
+  :ref => 'v2.2.2'
+
+mod 'reidmv-yamlfile', '0.2.0'
