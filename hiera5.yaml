@@ -23,6 +23,11 @@ hierarchy:
       - "nodes/packages/%{facts.fqdn}.yaml"
       - "os/packages/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
       - "packages.yaml"
+  - name: "services"
+    paths:
+      - "nodes/services/%{facts.fqdn}.yaml"
+      - "os/services/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "services.yaml"
   - name: "printers"
     paths:
       - "nodes/printers/%{facts.fqdn}.yaml"
@@ -33,3 +38,22 @@ hierarchy:
       - "nodes/x509/%{facts.fqdn}.yaml"
       - "os/x509/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
       - "x509.yaml"
+  - name: "marcin"
+    paths:
+      - "nodes/marcin/%{facts.fqdn}.yaml"
+      - "os/marcin/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "marcin.yaml"
+  - name: "config"
+    paths:
+      - "nodes/config/%{facts.fqdn}.yaml"
+      - "os/config/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "config.yaml"
+  - name: "secret"
+    paths:
+      - "nodes/secret/%{facts.fqdn}.yaml"
+      - "os/secret/%{facts.osfamily}/%{facts.operatingsystemrelease}.yaml"
+      - "secret.yaml"
+  - name: "lookup"
+    paths:
+      - "lookup.yaml"
+
