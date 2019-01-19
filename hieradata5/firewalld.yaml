@@ -5,6 +5,15 @@ firewalld::install_gui: false
 firewalld::service_ensure: running
 firewalld::service_enable: true
 firewalld::default_zone: block
+firewalld:zones:
+  internal:
+    ensure: present
+    target: 'default'
+    interfaces: ['wlan0']
+    masquerade: true
+    purge_rich_rules: false
+    purge_services: false
+    purge_ports: false
 
 firewalld::services:
   'Allow SSH from the internal zone':
@@ -31,18 +40,18 @@ firewalld::services:
     ensure: present
     service: nfs3
     zone: internal
-  'Allow rpc-bind from the internal zone':
-    ensure: present
-    service: rpc-bind
-    zone: internal
-  'Allow samba from the internal zone':
-    ensure: present
-    service: samba
-    zone: internal
-  'Allow samba-client from the internal zone':
-    ensure: present
-    service: samba-client
-    zone: internal
+  #'Allow rpc-bind from the internal zone':
+    #ensure: present
+    #service: rpc-bind
+    #zone: internal
+  #'Allow samba from the internal zone':
+    #ensure: present
+    #service: samba
+    #zone: internal
+  #'Allow samba-client from the internal zone':
+    #ensure: present
+    #service: samba-client
+    #zone: internal
   'Allow vnc-server from the internal zone':
     ensure: present
     service: vnc-server
@@ -66,6 +75,11 @@ firewalld::ports:
     ensure: present
     zone: internal
     port: 7171
+    protocol: 'tcp'
+  'Open port 9000/tcp in the internal zone':
+    ensure: present
+    zone: internal
+    port: 9000
     protocol: 'tcp'
 #  'Open port kdeconnect tcp':
 #    ensure: present
