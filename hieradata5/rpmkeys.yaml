@@ -133,7 +133,7 @@ mopensuse::rpmkeys:
         ensure: 'present'
     systemsmanagement_machinery:
         source: "http://download.opensuse.org/repositories/systemsmanagement:/machinery/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
-        name: 'A0E46E11'
+        name: '5B291A5F'
         ensure: 'present'
     system_snappy:
         source: "http://download.opensuse.org/repositories/system:/snappy/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key"
