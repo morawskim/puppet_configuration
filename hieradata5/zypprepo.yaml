@@ -44,13 +44,13 @@ mopensuse::zypprepos:
         gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
         type       : 'rpm-md'
 
-    devel_languages_python:
+    devel_languages_python_backports:
         autorefresh: '1'
-        baseurl    : 'http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_%{::operatingsystemrelease}/'
-        descr      : 'Python Modules (openSUSE_Leap_%{::operatingsystemrelease})'
+        baseurl    : 'http://download.opensuse.org/repositories/devel:/languages:/python:/backports/openSUSE_Leap_%{::operatingsystemrelease}/'
+        descr      : 'Backport builds of Python Modules (openSUSE_Leap_%{::operatingsystemrelease})'
         enabled    : '1'
         gpgcheck   : '1'
-        gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
+        gpgkey     : 'http://download.opensuse.org/repositories/devel:/languages:/python:/backports/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
         type       : 'rpm-md'
 
     devel_languages_ruby_extensions:
