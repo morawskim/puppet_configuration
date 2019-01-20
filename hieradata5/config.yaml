@@ -1,9 +1,41 @@
-mopensuse::config::git_server::dirs:
+mopensuse::config::git_server::files:
+    git:
+        path: '/srv/git/'
+        owner: 'root'
+        group: 'root'
+        mode: '0755'
+        ensure: 'directory'
     morawskim:
         path: '/srv/git/morawskim'
         owner: 'marcin'
         group: 'nogroup'
         mode: '0755'
+        ensure: 'directory'
+
+mopensuse::config::apache2::modules:
+    php5:
+        ensure: absent
+        name: php5
+    proxy:
+        name: proxy
+    proxy_fcgi:
+        name: proxy_fcgi
+    proxy_http:
+        name: proxy_http
+    ssl:
+        name: ssl
+    rewrite:
+        name: rewrite
+    userdir:
+        name: userdir
+    version:
+        name: version
+    headers:
+        name: headers
+    filter:
+        name: filter
+    deflate:
+        name: deflate
 
 mopensuse::config::apache2::custom::files:
     mmo:
@@ -30,6 +62,37 @@ mopensuse::config::apache2::custom::files:
         owner: 'root'
         group: 'root'
         mode: '0644'
+    '/etc/apache2/mod_userdir.conf':
+        source: 'puppet:///configuration/apache2/mod_userdir.conf'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+    '/srv/www/vhosts':
+        ensure: 'directory'
+        mode: '0750'
+        owner: 'wwwrun'
+        group: 'root'
+    userdir:
+        ensure: 'directory'
+        path: '/srv/www/userdir/'
+        owner: 'root'
+        group: 'root'
+        mode: '0755'
+    '/var/log/apache2':
+        ensure: 'directory'
+        owner: 'root'
+        group: 'www'
+        mode: '0750'
+    '/srv/www/userdir/marcin':
+        ensure: 'directory'
+        owner: 'marcin'
+        group: 'www'
+        mode: '0755'
+    '/srv/www/vhosts/marcin':
+        ensure: 'directory'
+        owner: 'marcin'
+        group: 'www'
+        mode: '2750'
 
 mopensuse::config::nullmailer::files:
     adminaddr:
@@ -133,6 +196,11 @@ mopensuse::config::cgit::cgit_host: 'cgit.test'
 mopensuse::config::cgit::cgit_host_aliases:
         - 'www.cgit.test'
 mopensuse::config::cgit::files:
+    /var/cache/cgit:
+        ensure: 'directory'
+        owner: 'wwwrun'
+        group: 'root'
+        mode: '0700'
     vhost:
         path: '/etc/apache2/vhosts.d/cgit.test.conf'
         source: 'puppet:///configuration/apache2/cgit.test.conf'
@@ -277,6 +345,28 @@ mopensuse::config::network_manager::files:
 mopensuse::config::pam::files:
     '/etc/security/limits.d/mmo.conf':
         source: 'puppet:///configuration/pam/pam_limits.conf'
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
+mopensuse::config::docker::files:
+    '/etc/docker/':
+        ensure: 'directory'
+        owner: 'root'
+        group: 'root'
+        mode: '0700'
+    '/etc/docker/certs.d/':
+        ensure: 'directory'
+        owner: 'root'
+        group: 'root'
+        mode: '0755'
+    '/etc/docker/certs.d/nexus.office.local':
+        ensure: 'directory'
+        owner: 'root'
+        group: 'root'
+        mode: '0755'
+    '/etc/docker/certs.d/nexus.office.local/ca.crt':
+        source: 'puppet:///configuration/certs/psat.crt'
         owner: 'root'
         group: 'root'
         mode: '0644'
