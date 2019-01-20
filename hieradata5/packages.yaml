@@ -3,7 +3,7 @@ mopensuse::packages:
         ensure: present
     alien:
         ensure: present
-    apachetop:
+    apache2:
         ensure: present
     aspell:
         ensure: present
