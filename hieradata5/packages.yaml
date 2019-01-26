@@ -900,10 +900,6 @@ mopensuse::packages:
         ensure: present
     xwininfo:
         ensure: present
-    recordmydesktop:
-        ensure: present
-    qt-recordmydesktop:
-        ensure: present
     redshift:
         ensure: present
     retext:
