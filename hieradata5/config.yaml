@@ -107,18 +107,18 @@ mopensuse::config::nullmailer::files:
         owner: 'nullmailer'
         group: 'nullmailer'
         mode: '0640'
-    remotes:
+    defaultdomain:
         path: '/etc/nullmailer/defaultdomain'
         source: 'puppet:///configuration/nullmailer/defaultdomain'
         owner: 'nullmailer'
         group: 'nullmailer'
         mode: '0644'
-#    me:
-#        path: '/etc/nullmailer/me'
-#        source: 'puppet:///configuration/nullmailer/me'
-#        owner: 'nullmailer'
-#        group: 'nullmailer'
-#        mode: '0644'
+    me:
+       path: '/etc/nullmailer/me'
+       source: 'puppet:///configuration/nullmailer/me'
+       owner: 'nullmailer'
+       group: 'nullmailer'
+       mode: '0644'
 
 mopensuse::config::vagrant::files:
     sudoers:
