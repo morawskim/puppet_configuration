@@ -89,7 +89,17 @@ mopensuse::services:
         enable     : true
         hasrestart : true
         hasstatus  : true
+    'snapd':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
     'sshd':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
+    'x11vnc':
         ensure     : running
         enable     : true
         hasrestart : true
