@@ -35,7 +35,7 @@ GIT
 GIT
   remote: git://github.com/morawskim/puppet-mopensuse.git
   ref: master
-  sha: 427ec8edbca2ef2ecc8d24f58dfe9ee4dcbabe22
+  sha: 8ea919de763be99abccc767547b9610a3571b38a
   specs:
     puppet-mopensuse (0.1.0)
 
