@@ -210,6 +210,15 @@ mopensuse::zypprepos:
         gpgkey     : 'http://download.opensuse.org/repositories/network:utilities/openSUSE_Leap_%{::operatingsystemrelease}/repodata/repomd.xml.key'
         type       : 'rpm-md'
 
+    nvidia:
+        autorefresh: '1'
+        baseurl    : 'https://download.nvidia.com/opensuse/leap/%{::operatingsystemrelease}/'
+        descr      : 'Nvidia (openSUSE_Leap_%{::operatingsystemrelease})'
+        enabled    : '1'
+        gpgcheck   : '1'
+        gpgkey     : 'https://download.nvidia.com/opensuse/leap/%{::operatingsystemrelease}/repodata/repomd.xml.key'
+        type       : 'rpm-md'
+
     obs_morawskim:
         autorefresh: '1'
         baseurl    : 'http://download.opensuse.org/repositories/home:/morawskim/openSUSE_Leap_%{::operatingsystemrelease}/'
