@@ -341,6 +341,11 @@ mopensuse::config::network_manager::files:
         owner: 'root'
         group: 'root'
         mode: '0644'
+    '/etc/NetworkManager/dispatcher.d/envIpAddress.rb':
+        source: 'puppet:///configuration/NetworkManager/envIpAddress.rb'
+        owner: 'root'
+        group: 'root'
+        mode: '0755'
 
 mopensuse::config::pam::files:
     '/etc/security/limits.d/mmo.conf':
