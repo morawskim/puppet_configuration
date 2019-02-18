@@ -904,6 +904,9 @@ mopensuse::packages:
         ensure: present
     retext:
         ensure: present
+    rocketchat-desktop:
+        ensure: present
+        provider: snap
     rsibreak:
         ensure: present
     scrot:
@@ -916,10 +919,11 @@ mopensuse::packages:
         ensure: present
     skypeforlinux:
         ensure: present
-    slack:
-        ensure: present
     SoapUI:
         ensure: present
+    spotify:
+        ensure: present
+        provider: snap
     sqlitebrowser:
         ensure: present
     steam:
