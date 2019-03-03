@@ -213,6 +213,8 @@ mopensuse::packages:
         ensure: present
     monit:
         ensure: present
+    moreutils:
+        ensure: present
     ncdu:
         ensure: present
     iotop:
