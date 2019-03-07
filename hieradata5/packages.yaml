@@ -515,6 +515,8 @@ mopensuse::packages:
         ensure: present
     postfix:
         ensure: absent
+    postgresql96:
+        ensure: present
     nullmailer:
         ensure: present
         #require: Package['postfix'] nie dziala blad budowania katalogu
