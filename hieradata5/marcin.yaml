@@ -38,6 +38,11 @@ mopensuse::user::config::files::files:
         owner: 'marcin'
         group: 'marcin'
         mode: '0750'
+    '/home/marcin/.local/bin/ffsend':
+        source: 'https://github.com/timvisee/ffsend/releases/download/v0.2.33/ffsend-v0.2.33-linux-x64-static'
+        owner: 'marcin'
+        group: 'marcin'
+        mode: '0750'
     '/srv/git/morawskim/rpmbuild.git':
         ensure: 'link'
         target: '/home/marcin/rpmbuild/.git/'
