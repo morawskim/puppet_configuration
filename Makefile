@@ -14,11 +14,17 @@ init:
 suse:
 	FACTER_operatingsystemmajrelease=15 FACTER_operatingsystemrelease="15.0" FACTER_operatingsystem="OpenSuSE" FACTER_osfamily="Suse" sudo -E /usr/local/share/puppet/bin/puppet apply   --hiera_config=hiera5.yaml --modulepath=modules/ manifests/suse15.pp
 
-marcin2:
-	FACTER_operatingsystemmajrelease=15 FACTER_operatingsystemrelease="15.0" FACTER_operatingsystem="OpenSuSE" FACTER_osfamily="Suse" sudo -E /usr/local/share/puppet/bin/puppet apply   --hiera_config=hiera5.yaml --modulepath=modules/ manifests/marcin.pp
+role:
+	FACTER_operatingsystemmajrelease=15 FACTER_operatingsystemrelease="15.0" FACTER_operatingsystem="OpenSuSE" FACTER_osfamily="Suse" sudo -E /usr/local/share/puppet/bin/puppet apply   --hiera_config=hiera5.yaml --modulepath=modules/ manifests/roles/${ROLE}.pp
+
+marcin:
+	FACTER_operatingsystemmajrelease=15 FACTER_operatingsystemrelease="15.0" FACTER_operatingsystem="OpenSuSE" FACTER_osfamily="Suse" sudo -E /usr/local/share/puppet/bin/puppet apply  --hiera_config=hiera5.yaml --modulepath=modules/ manifests/marcin.pp
+
+marcin-config:
+	FACTER_operatingsystemmajrelease=15 FACTER_operatingsystemrelease="15.0" FACTER_operatingsystem="OpenSuSE" FACTER_osfamily="Suse" /usr/local/share/puppet/bin/puppet apply   --hiera_config=hiera5.yaml --modulepath=modules/ manifests/marcin-config.pp
 
 config:
-	FACTER_operatingsystemmajrelease=15 FACTER_operatingsystemrelease="15.0" FACTER_operatingsystem="OpenSuSE" FACTER_osfamily="Suse" sudo -E /usr/local/share/puppet/bin/puppet apply   --hiera_config=hiera5.yaml --modulepath=modules/ manifests/config.pp
+	FACTER_operatingsystemmajrelease=15 FACTER_operatingsystemrelease="15.0" FACTER_operatingsystem="OpenSuSE" FACTER_osfamily="Suse" sudo -E /usr/local/share/puppet/bin/puppet apply  --hiera_config=hiera5.yaml --modulepath=modules/ manifests/config.pp
 
 projekt:
 	FACTER_operatingsystemmajrelease=15 FACTER_operatingsystemrelease="15.0" FACTER_operatingsystem="OpenSuSE" FACTER_osfamily="Suse" /usr/local/share/puppet/bin/puppet apply --hiera_config=hiera5.yaml --modulepath=modules/ manifests/projekty/${MANIFEST}
