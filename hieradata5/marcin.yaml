@@ -71,17 +71,23 @@ mopensuse::user::config::files::files:
         path    : '/home/marcin/Publiczny'
         ensure  : link
         target  : "/srv/www/userdir/marcin"
-    '/srv/www/userdir/marcin/upload/':
+    '/srv/www/userdir/marcin/upload/index.php':
         source: 'https://raw.githubusercontent.com/jcampbell1/simple-file-manager/49aebf67a756db560dd2cf0f8f4954d2c0bfc304/index.php'
         owner: 'marcin'
         group: 'www'
         mode: '0640'
     '/srv/www/userdir/marcin/upload/.htaccess':
-        content: '<Files *.*>
-    #ForceType application/octet-stream
-    #Header set Content-Disposition attachment
-    SetHandler !
-</Files>'
+        content: |
+            <Files *.*>
+                #ForceType application/octet-stream
+                #Header set Content-Disposition attachment
+                SetHandler !
+            </Files>
+            <Files index.php>
+                #ForceType application/octet-stream
+                #Header set Content-Disposition attachment
+                SetHandler application/x-httpd-php
+            </Files>
         owner: 'marcin'
         group: 'www'
         mode: '0640'
