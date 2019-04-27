@@ -58,6 +58,11 @@ mopensuse::user::config::files::files:
         owner: 'marcin'
         group: 'marcin'
         mode: '0750'
+    '/home/marcin/.local/bin/docker-debug':
+        source: 'http://rpm.morawskim.pl/bin/docker-debug-linux-amd64-0.6.0'
+        owner: 'marcin'
+        group: 'marcin'
+        mode: '0750'
     '/srv/git/morawskim/rpmbuild.git':
         ensure: 'link'
         target: '/home/marcin/rpmbuild/.git/'
