@@ -8,9 +8,9 @@ mopensuse::packages:
     ruby-devel-extra:
         name: ruby2.5-devel-extra
     rubygem-debase-ruby_core_source:
-        name: ruby2.5-rubygem-debase-ruby_core_source
-    foreman:
-        name: ruby2.5-rubygem-foreman
+        name: debase-ruby_core_source
+        provider: gem
+        ensure: '0.10.3'
     nodejs:
         name: nodejs8
     nodejs-devel:
