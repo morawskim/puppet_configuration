@@ -17,16 +17,6 @@ mopensuse::packages:
         name: nodejs8-devel
     patterns-devel_rpm_build:
         name: patterns-devel-base-devel_rpm_build
-    patterns-devel_C_C++:
-        name: 'patterns-devel-C-C++-devel_C_C++'
-        ensure: present
-    patterns-devel_qt5:
-        name: 'patterns-kde-devel_qt5'
-        ensure: present
-    patterns-devel_kde:
-        name: 'patterns-kde-devel_kde'
-    patterns-devel_ruby:
-        name: 'patterns-devel-ruby-devel_ruby'
     # nothing provide php-mcrypt
     phpMyAdmin40:
         ensure: absent
