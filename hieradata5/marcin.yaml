@@ -96,6 +96,64 @@ mopensuse::user::config::files::files:
         owner: 'marcin'
         group: 'www'
         mode: '0640'
+    '/home/marcin/.local/bin/ng':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/ng'
+    '/home/marcin/.local/bin/caniuse':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/caniuse'
+    '/home/marcin/.local/bin/deelay':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/deelay'
+    '/home/marcin/.local/bin/fx':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/fx'
+    '/home/marcin/.local/bin/gitbook':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/gitbook'
+    '/home/marcin/.local/bin/http-server':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/http-server'
+    '/home/marcin/.local/bin/json-server':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/json-server'
+    '/home/marcin/.local/bin/local-ssl-proxy':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/local-ssl-proxy'
+    '/home/marcin/.local/bin/lt':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/lt'
+    '/home/marcin/.local/bin/mdncomp':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/mdncomp'
+    '/home/marcin/.local/bin/n':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/n'
+    '/home/marcin/.local/bin/n':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/n'
+    '/home/marcin/.local/bin/f':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/f'
+    '/home/marcin/.local/bin/npx':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/npx'
+    '/home/marcin/.local/bin/observatory':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/observatory'
+    '/home/marcin/.local/bin/pageres':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/pageres'
+    '/home/marcin/.local/bin/pwned':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/pwned'
+    '/home/marcin/.local/bin/snyk':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/snyk'
+    '/home/marcin/.local/bin/whistle':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/whistle'
+
 
 mopensuse::user::config::dirs::dirs:
     '/home/marcin/mnt':
