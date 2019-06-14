@@ -48,6 +48,11 @@ mopensuse::user::config::files::files:
         owner: 'marcin'
         group: 'marcin'
         mode: '0750'
+    '/home/marcin/.local/bin/bat':
+        source: 'http://rpm.morawskim.pl/bin/bat-v0.11.0-x86_64-unknown-linux-gnu'
+        owner: 'marcin'
+        group: 'marcin'
+        mode: '0750'
     '/home/marcin/.local/bin/docker-ls':
         source: 'http://rpm.morawskim.pl/bin/docker-ls-v0.3.2'
         owner: 'marcin'
