@@ -193,6 +193,8 @@ mopensuse::packages:
         ensure: present
     libxml2-tools:
         ensure: present
+    license:
+        ensure: present
     live-fat-stick:
         ensure: present
     linkchecker:
