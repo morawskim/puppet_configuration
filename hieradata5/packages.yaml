@@ -50,10 +50,8 @@ mopensuse::packages:
         ensure: present
     cgit-filter-syntaxhiglight:
         ensure: present
-    #cheat:
-        #ensure: present
-    #cheat-bash-completion:
-        #ensure: present
+    cmake:
+        ensure: present
     colordiff:
         ensure: present
     colout:
