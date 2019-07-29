@@ -4,6 +4,11 @@ mopensuse::services:
         enable     : true
         hasrestart : true
         hasstatus  : true
+    'collectd':
+        ensure     : running
+        enable     : true
+        hasrestart : true
+        hasstatus  : true
     'cups':
         ensure     : running
         enable     : true

@@ -94,6 +94,14 @@ mopensuse::config::apache2::custom::files:
         group: 'www'
         mode: '2750'
 
+mopensuse::config::collectd::files:
+    sudoers:
+        path: '/etc/collectd.conf'
+        source: 'puppet:///configuration/collectd/collectd.conf'
+        owner: 'root'
+        group: 'root'
+        mode: '0640'
+
 mopensuse::config::nullmailer::files:
     adminaddr:
         path: '/etc/nullmailer/adminaddr'

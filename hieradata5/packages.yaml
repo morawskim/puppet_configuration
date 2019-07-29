@@ -52,6 +52,10 @@ mopensuse::packages:
         ensure: present
     cmake:
         ensure: present
+    collectd:
+        ensure: present
+    collectd-web:
+        ensure: present
     colordiff:
         ensure: present
     colout:
