@@ -36,6 +36,8 @@ mopensuse::config::apache2::modules:
         name: filter
     deflate:
         name: deflate
+    access_compat:
+        name:  access_compat
 
 mopensuse::config::apache2::custom::files:
     mmo:
