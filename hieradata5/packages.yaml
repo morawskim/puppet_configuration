@@ -24,6 +24,8 @@ mopensuse::packages:
         ensure: present
     bind-utils:
         ensure: present
+    bridge-utils:
+        ensure: present
     bsdtar:
         ensure: present
     bup:
@@ -63,6 +65,8 @@ mopensuse::packages:
     dateutils:
         ensure: present
     dbus-1:
+        ensure: present
+    duplicity:
         ensure: present
     ltrace:
         ensure: present
@@ -144,6 +148,8 @@ mopensuse::packages:
     ImageMagick:
         ensure: present
     inotify-tools:
+        ensure: present
+    inxi:
         ensure: present
     iperf:
         ensure: present
@@ -239,11 +245,15 @@ mopensuse::packages:
         ensure: present
     offlineimap:
         ensure: present
+    openssh:
+        ensure: present
     openssl:
         ensure: present
     openvpn:
         ensure: present
     osc:
+        ensure: present
+    p11-kit-tools:
         ensure: present
     p7zip:
         ensure: present
@@ -356,6 +366,8 @@ mopensuse::packages:
         ensure: present
     rar:
         ensure: present
+    rclone:
+        ensure: present
     redis:
         ensure: present
     libtool:
@@ -374,6 +386,9 @@ mopensuse::packages:
         ensure: present
     rpmorphan:
         ensure: present
+    # we use journal to log (systemd-logger)
+    rsyslog:
+        ensure: absent
     python-pyx:
         ensure: present
     xwud:
@@ -409,6 +424,8 @@ mopensuse::packages:
     swaks:
         ensure: present
     sysstat:
+        ensure: present
+    systemd-logger:
         ensure: present
     taskwarrior:
         ensure: present
@@ -482,6 +499,10 @@ mopensuse::packages:
         ensure: present
     exa-bash-completion:
         ensure: present
+    fd:
+        ensure: present
+    fd-bash-completion:
+        ensure: present
     fontawesome-fonts:
         ensure: present
     fontawesome-fonts-web:
@@ -543,6 +564,8 @@ mopensuse::packages:
         ensure: present
     python3-psutil:
         ensure: present
+    python3-Sphinx:
+        ensure: present
     rr:
         ensure: present
     ruby-build:
@@ -578,6 +601,8 @@ mopensuse::packages:
     yadm:
         ensure: present
     yum-scripts:
+        ensure: present
+    'hashcat':
         ensure: present
 
     
@@ -638,6 +663,8 @@ mopensuse::packages:
     kdiff3:
         ensure: present
     kio-gdrive:
+        ensure: present
+    konqueror-plugins:
         ensure: present
     krdc:
         ensure: present
@@ -749,6 +776,8 @@ mopensuse::packages:
         ensure: present
     xsel:
         ensure: present
+    yank:
+        ensure: present
     yakuake:
         ensure: present
     zeal:
@@ -759,4 +788,27 @@ mopensuse::packages:
         ensure: present
     snapd:
         ensure: present
-
+    # https://github.com/brendangregg/FlameGraph
+    perl-Devel-NYTProf:
+        ensure: present
+    googler:
+        ensure: present
+    asciinema:
+        ensure: present
+    python3-devel:
+        ensure: present
+    python-devel:
+        ensure: present
+    alacritty:
+        ensure: present
+    alacritty-bash-completion:
+        ensure: present
+    # for pdflatex
+    texlive-latex-bin-bin:
+        ensure: present
+    ranger:
+        ensure: present
+    go:
+        ensure: present
+    neofetch:
+        ensure: present
