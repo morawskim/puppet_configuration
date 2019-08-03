@@ -14,11 +14,7 @@ mopensuse::packages:
     rubygem-augeas:
         name: ruby2.1-rubygem-ruby-augeas
         ensure: present
-    rubygem-debase-ruby_core_source:
-        ensure: present
     augeas:
-        ensure: present
-    autoconf213:
         ensure: present
     bash-completion:
         ensure: present
@@ -32,15 +28,9 @@ mopensuse::packages:
         ensure: present
     bup:
         ensure: present
-    #ca-certificates:
-        #ensure: present
     git:
         ensure: present
     git-svn:
-        ensure: present
-    subversion:
-        ensure: present
-    subversion-bash-completion:
         ensure: present
     git-daemon:
         ensure: present
@@ -78,25 +68,11 @@ mopensuse::packages:
         ensure: present
     valgrind:
         ensure: present
-    'patterns-devel_C_C++':
-        name: 'patterns-devel-base-devel_c_c++'
-        ensure: present
-    'patterns-devel_qt5':
-        name: 'patterns-openSUSE-devel_qt5'
-        ensure: present
-    'patterns-devel_kde':
-        name: 'patterns-openSUSE-devel_kde'
-        ensure: present
-    re2c:
-        ensure: present
     java-1_8_0-openjdk-devel:
         ensure: present
     valgrind-devel:
         ensure: present
     ruby-build:
-        ensure: present
-    patterns-devel_ruby:
-        name: 'patterns-openSUSE-devel_ruby'
         ensure: present
     bundler:
         name: 'ruby2.1-rubygem-bundler'
@@ -109,11 +85,6 @@ mopensuse::packages:
     ruby-devel-extra:
         name: 'ruby2.1-devel-extra'
         ensure: present
-    #ruby-devel
-    valgrind-devel:
-        ensure: present
-    rbenv:
-        ensure: present
     libcap-progs:
         ensure: present
     dnsmasq:
@@ -123,8 +94,6 @@ mopensuse::packages:
     docker:
         ensure: present
     docker-bash-completion:
-        ensure: present
-    dockerize:
         ensure: present
     easy-rsa2:
         ensure: present
@@ -137,9 +106,6 @@ mopensuse::packages:
     fontawesome-fonts:
         ensure: present
     fontawesome-fonts-web:
-        ensure: present
-    foreman:
-        name: ruby2.1-rubygem-foreman
         ensure: present
     lftp:
         ensure: present
@@ -163,8 +129,6 @@ mopensuse::packages:
         ensure: present
     gifsicle:
         ensure: present
-    python-glances:
-        ensure: present
     git-extras:
         ensure: present
     graphviz:
@@ -174,8 +138,6 @@ mopensuse::packages:
     html2text:
         ensure: present
     httperf:
-        ensure: present
-    httpry:
         ensure: present
     httrack:
         ensure: present
@@ -202,8 +164,6 @@ mopensuse::packages:
     linkchecker:
         ensure: present
     live-grub-stick:
-        ensure: present
-    lnav:
         ensure: present
     logwatch:
         ensure: present
@@ -242,16 +202,6 @@ mopensuse::packages:
     mariadb-errormessages:
         ensure: present
     mariadb-client:
-        ensure: present
-    mongodb-server:
-        ensure: present
-    mongodb-shell:
-        ensure: present
-    #mysql_client:
-        #ensure: present
-    mysql-utilities:
-        ensure: present
-    mysql-sandbox:
         ensure: present
     mytop:
         ensure: present
@@ -309,8 +259,6 @@ mopensuse::packages:
         ensure: present
     pdfgrep:
         ensure: present
-    #php-build:
-        #ensure: present
     php7:
         ensure: present
     php7-fpm:
@@ -369,153 +317,11 @@ mopensuse::packages:
         ensure: present
     php7-xdebug:
         ensure: present
-    #php70v:
-        #ensure: present
-    #php70v-fpm:
-        #ensure: present
-    #php70v-mysql:
-        #ensure: present
-    #php70v-ldap:
-        #ensure: present
-    #php70v-soap:
-        #ensure: present
-    #php70v-iconv:
-        #ensure: present
-    #php70v-pgsql:
-        #ensure: present
-    #php70v-phar:
-        #ensure: present
-    #php70v-devel:
-        #ensure: present
-    #php70v-readline:
-        #ensure: present
-    #php70v-curl:
-        #ensure: present
-    #php70v-mbstring:
-        #ensure: present
-    #php70v-json:
-        #ensure: present
-    #php70v-intl:
-        #ensure: present
-    #php70v-gettext:
-        #ensure: present
-    #php70v-xsl:
-        #ensure: present
-    #php70v-zlib:
-        #ensure: present
-    #php70v-xmlwriter:
-        #ensure: present
-    #php70v-bcmath:
-        #ensure: present
-    #php70v-sockets:
-        #ensure: present
-    #php70v-pcntl:
-        #ensure: present
-    #php70v-ctype:
-        #ensure: present
-    #php70v-gd:
-        #ensure: present
-    #php70v-xmlreader:
-        #ensure: present
-    #php70v-zip:
-        #ensure: present
-    #php70v-fileinfo:
-        #ensure: present
-    #php70v-tokenizer:
-        #ensure: present
-    #php70v-exif:
-        #ensure: present
-    #php70v-mcrypt:
-        #ensure: present
-    #php70v-ftp:
-        #ensure: present
-    #php70v-xdebug:
-        #ensure: present
-    #php70v-redis:
-        #ensure: present
-    #php70v-imagick:
-        #ensure: present
-    #php70v-mailparse:
-        #ensure: present
-    #php70v-gearman:
-        #ensure: present
-    #php71v:
-        #ensure: present
-    #php71v-fpm:
-        #ensure: present
-    #php71v-mysql:
-        #ensure: present
-    #php71v-ldap:
-        #ensure: present
-    #php71v-soap:
-        #ensure: present
-    #php71v-iconv:
-        #ensure: present
-    #php71v-pgsql:
-        #ensure: present
-    #php71v-phar:
-        #ensure: present
-    #php71v-devel:
-        #ensure: present
-    #php71v-readline:
-        #ensure: present
-    #php71v-curl:
-        #ensure: present
-    #php71v-mbstring:
-        #ensure: present
-    #php71v-json:
-        #ensure: present
-    #php71v-intl:
-        #ensure: present
-    #php71v-gettext:
-        #ensure: present
-    #php71v-xsl:
-        #ensure: present
-    #php71v-zlib:
-        #ensure: present
-    #php71v-xmlwriter:
-        #ensure: present
-    #php71v-bcmath:
-        #ensure: present
-    #php71v-sockets:
-        #ensure: present
-    #php71v-pcntl:
-        #ensure: present
-    #php71v-ctype:
-        #ensure: present
-    #php71v-gd:
-        #ensure: present
-    #php71v-xmlreader:
-        #ensure: present
-    #php71v-zip:
-        #ensure: present
-    #php71v-fileinfo:
-        #ensure: present
-    #php71v-tokenizer:
-        #ensure: present
-    #php71v-exif:
-        #ensure: present
-    #php71v-mcrypt:
-        #ensure: present
-    #php71v-ftp:
-        #ensure: present
-    #php71v-xdebug:
-        #ensure: present
-    #php71v-redis:
-        #ensure: present
-    #php71v-imagick:
-        #ensure: present
-    #php71v-mailparse:
-        #ensure: present
-    #php71v-gearman:
-        #ensure: present
     phpldapadmin:
         ensure: present
     phpMyAdmin:
         ensure: present
     phpMyAdmin40:
-        ensure: present
-    pktstat:
         ensure: present
     postfix:
         ensure: absent
@@ -523,7 +329,6 @@ mopensuse::packages:
         ensure: present
     nullmailer:
         ensure: present
-        #require: Package['postfix'] nie dziala blad budowania katalogu
     powerline:
         ensure: present
     tmux-powerline:
@@ -569,17 +374,7 @@ mopensuse::packages:
         ensure: present
     rpmorphan:
         ensure: present
-    samba:
-        ensure: present
-    samba-doc:
-        ensure: present
-    samba-client:
-        ensure: present
-    #python-gnuplot-py:
-        #ensure: present
     python-pyx:
-        ensure: present
-    scapy:
         ensure: present
     xwud:
         ensure: present
@@ -590,8 +385,6 @@ mopensuse::packages:
     sensors:
         ensure: present
     cpupower:
-        ensure: present
-    smbnetfs:
         ensure: present
     smtp-cli:
         ensure: present
@@ -675,19 +468,11 @@ mopensuse::packages:
         ensure: present
     cgit-filter-syntaxhiglight:
         ensure: present
-    #cheat:
-        #ensure: present
-    #cheat-bash-completion:
-        #ensure: present
     cloudflare-tools:
         ensure: present
     composer:
         ensure: present
     ctop:
-        ensure: present
-    dockerize:
-        ensure: present
-    easy-rsa:
         ensure: present
     easy-rsa2:
         ensure: present
