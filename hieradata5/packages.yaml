@@ -135,6 +135,8 @@ mopensuse::packages:
         ensure: present
     git-extras:
         ensure: present
+    git-quick-stats:
+        ensure: present
     graphviz:
         ensure: present
     greenmail:
