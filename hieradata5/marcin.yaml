@@ -158,7 +158,12 @@ mopensuse::user::config::files::files:
     '/home/marcin/.local/bin/whistle':
         ensure  : link
         target  : '/home/marcin/.local/npmpackages/node_modules/.bin/whistle'
-
+    '/home/marcin/.local/bin/fx':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/fx'
+    '/home/marcin/.local/bin/fx-completion':
+        ensure  : link
+        target  : '/home/marcin/.local/npmpackages/node_modules/.bin/fx-completion'
 
 mopensuse::user::config::dirs::dirs:
     '/home/marcin/mnt':
