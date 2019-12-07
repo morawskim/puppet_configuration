@@ -30,6 +30,8 @@ mopensuse::packages:
         ensure: present
     bup:
         ensure: present
+    bvi:
+        ensure: present
     git:
         ensure: present
     git-svn:
