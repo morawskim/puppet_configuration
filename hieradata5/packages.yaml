@@ -453,6 +453,8 @@ mopensuse::packages:
         ensure: present
     vdirsyncer:
         ensure: present
+    vifm:
+        ensure: present
     vim:
         ensure: present
     virtualbox:
