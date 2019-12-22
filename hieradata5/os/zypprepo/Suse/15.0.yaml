@@ -3,3 +3,5 @@ mopensuse::zypprepos:
         enabled: 0
     security_tools:
         enabled: 0
+    devel_tools:
+        enabled: 0

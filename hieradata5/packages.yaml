@@ -407,6 +407,8 @@ mopensuse::packages:
         ensure: present
     cpupower:
         ensure: present
+    skopeo:
+        ensure: present
     smtp-cli:
         ensure: present
     socat:
